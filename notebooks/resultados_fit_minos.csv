@@ -1,0 +1,9 @@
+Parametro,Best_Fit,Error_Minos_Low,Error_Minos_Up
+rFL,0.34277281165122986,"tf.Tensor(-inf, shape=(), dtype=float64)","tf.Tensor(inf, shape=(), dtype=float64)"
+rS3,-0.23109985888004303,"tf.Tensor(-inf, shape=(), dtype=float64)","tf.Tensor(inf, shape=(), dtype=float64)"
+rS9,0.17020559310913086,"tf.Tensor(-inf, shape=(), dtype=float64)","tf.Tensor(inf, shape=(), dtype=float64)"
+rAFB,0.25281083583831787,"tf.Tensor(-inf, shape=(), dtype=float64)","tf.Tensor(inf, shape=(), dtype=float64)"
+rS4,-0.5966547727584839,"tf.Tensor(-inf, shape=(), dtype=float64)","tf.Tensor(inf, shape=(), dtype=float64)"
+rS7,-0.3770146667957306,"tf.Tensor(-inf, shape=(), dtype=float64)","tf.Tensor(inf, shape=(), dtype=float64)"
+rS5,-0.598940908908844,"tf.Tensor(-inf, shape=(), dtype=float64)","tf.Tensor(inf, shape=(), dtype=float64)"
+rS8,0.4748370349407196,"tf.Tensor(-inf, shape=(), dtype=float64)","tf.Tensor(inf, shape=(), dtype=float64)"
