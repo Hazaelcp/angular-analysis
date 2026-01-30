@@ -21,6 +21,86 @@ zfit.settings.set_seed(42)
 np.random.seed(42)
 warnings.simplefilter('ignore')
 
+
+def plot_angular_projections(sampler, phys_params_best, folder="Plots/Projections"):
+    """
+    Genera proyecciones 1D integrando las variables restantes mediante Monte Carlo.
+    Esto asegura que la escala de la PDF coincida con la del histograma.
+    """
+    os.makedirs(folder, exist_ok=True)
+    
+    # 1. Preparar datos del sampler
+    data_np = sampler.numpy()
+    df_data = pd.DataFrame(data_np, columns=['cosThetaL', 'cosThetaK', 'phi'])
+    
+    vars_info = {
+        'cosThetaL': {'range': (-1, 1), 'label': r'$\cos(\theta_l)$'},
+        'cosThetaK': {'range': (-1, 1), 'label': r'$\cos(\theta_k)$'},
+        'phi': {'range': (-np.pi, np.pi), 'label': r'$\phi$'}
+    }
+
+    # 2. Instanciar la PDF física con los valores del BEST FIT
+    obs_plot = zfit.Space('cosThetaL', (-1, 1)) * \
+               zfit.Space('cosThetaK', (-1, 1)) * \
+               zfit.Space('phi', (-np.pi, np.pi))
+    
+    pdf_phys = FullAngular_Physical_PDF(obs_plot, **phys_params_best)
+
+    print(">>> Calculando proyecciones integradas (esto puede tardar unos segundos)...")
+
+    for var_name, info in vars_info.items():
+        plt.figure(figsize=(8, 6))
+        
+        # Plot de los Datos (Histograma normalizado)
+        plt.hist(df_data[var_name], bins=40, range=info['range'], 
+                 density=True, alpha=0.3, color='gray', label='Toy Data (Sampler)')
+        
+        # --- CÁLCULO DE LA PROYECCIÓN POR MONTE CARLO ---
+        # Creamos el eje X para el plot
+        x_vals = np.linspace(info['range'][0], info['range'][1], 100)
+        
+        # Generamos puntos aleatorios para las variables que vamos a integrar
+        n_avg = 1000  # Número de puntos para promediar la integración
+        rand_cosL = np.random.uniform(-1, 1, n_avg)
+        rand_cosK = np.random.uniform(-1, 1, n_avg)
+        rand_phi  = np.random.uniform(-np.pi, np.pi, n_avg)
+        
+        y_vals = []
+        for x in x_vals:
+            # Para cada punto en X, evaluamos la PDF en un "grid" de las otras variables y promediamos
+            if var_name == 'cosThetaL':
+                grid = np.stack([np.full(n_avg, x), rand_cosK, rand_phi], axis=-1)
+            elif var_name == 'cosThetaK':
+                grid = np.stack([rand_cosL, np.full(n_avg, x), rand_phi], axis=-1)
+            else: # phi
+                grid = np.stack([rand_cosL, rand_cosK, np.full(n_avg, x)], axis=-1)
+            
+            # Evaluación masiva en zfit
+            data_grid = zfit.Data.from_numpy(obs=obs_plot, array=grid)
+            prob_mean = np.mean(pdf_phys.pdf(data_grid).numpy())
+            y_vals.append(prob_mean)
+        
+        y_vals = np.array(y_vals)
+        
+        # Normalización final: asegurar que el área de la curva sea 1
+        dx = (info['range'][1] - info['range'][0]) / (len(x_vals) - 1)
+        area = np.sum(y_vals) * dx
+        y_vals /= area
+
+        # Plot de la PDF proyectada
+        plt.plot(x_vals, y_vals, color='blue', lw=2.5, label='Fitted PDF (Projected)')
+        
+        plt.xlabel(info['label'], fontsize=14)
+        plt.ylabel('Densidad de Probabilidad', fontsize=14)
+        plt.title(f'Proyección Angular Correcta: {var_name}', fontsize=15)
+        plt.legend()
+        plt.grid(alpha=0.3)
+        
+        plt.savefig(f"{folder}/Projection_{var_name}_Corrected.png")
+        plt.close()
+        print(f"    -> {var_name}: ¡Hecho!")
+
+
 # --- FUNCIÓN AUXILIAR (El Motor de la Espada - Covarianza) ---
 def calculate_jacobian_numerical(func, params, keys_out, epsilon=1e-5):
     """Calcula la matriz Jacobiana numéricamente."""
@@ -58,7 +138,7 @@ def run_multi_view_analysis():
     
     print(f">>> Directorios listos:\n    - {folder_trans}\n    - {folder_phys_zoom}\n    - {folder_phys_full}")
 
-    # --- SETUP Y GENERACIÓN (JUGUETE) ---
+    # --- SETUP Y GENERACIÓN (toys) ---
     obs = zfit.Space('cosThetaL', limits=(-1, 1)) * \
           zfit.Space('cosThetaK', limits=(-1, 1)) * \
           zfit.Space('phi', limits=(-np.pi, np.pi))
@@ -71,7 +151,7 @@ def run_multi_view_analysis():
     print(">>> Generando datos (Toy MC)...")
     # Aumentamos estadística para estabilidad
     pdf_gen = FullAngular_Physical_PDF(obs, *true_vals_phys)
-    sampler = pdf_gen.create_sampler(n=100000) 
+    sampler = pdf_gen.create_sampler(n=2000) 
     sampler.resample()
 
     # --- AJUSTE (ESPACIO TRANSFORMADO) ---
@@ -108,7 +188,7 @@ def run_multi_view_analysis():
     print(f"{'PARAM':<10} | {'VALOR':<10} | {'ERROR -':<10} | {'ERROR +':<10} | {'VERDAD':<10}")
     print("-" * 80)
     
-    # Aquí guardamos los valores CORRECTOS de Minuit para usarlos después
+    # Aquí guarda los valores CORRECTOS de Minuit para usarlos después
     minuit_best_values = []
     
     for rk, pname in zip(r_keys, param_names_fit):
@@ -158,7 +238,7 @@ def run_multi_view_analysis():
 
     # --- GENERACIÓN DEL MAPA FÍSICO ---
     print(">>> 4. Mapeando la Región Física y Generando Gráficos...")
-    df_phys_region = get_physical_region_scan(n_points=10000)
+    df_phys_region = get_physical_region_scan(n_points=1000)
 
     # --- BUCLE DE PLOTEO ---
     indices = list(range(8))
@@ -208,7 +288,7 @@ def run_multi_view_analysis():
             plt.close()
 
             # ---------------------------------------------------------
-            # PLOTS FÍSICOS: ESTILO TESIS
+            # PLOTS FÍSICOS
             # ---------------------------------------------------------
             n_pts = len(contour_r)
             r_matrix = np.tile(best_fit_r_values, (n_pts, 1))
@@ -282,7 +362,15 @@ def run_multi_view_analysis():
             print(f"\n    [ERROR] Par {px}-{py}: {e}")
             plt.close()
 
-    print(f"\n\n>>> ¡ANÁLISIS COMPLETADO! S8 corregido y verificado.")
+
+    # ... (final de los bucles de contornos)
+    
+    print("\n>>> 5. Generando Proyecciones Angulares 1D...")
+    # Usamos el diccionario de valores físicos que calculamos con el Jacobiano
+    plot_angular_projections(sampler, best_fit_phys_dict)
+    
+    print(f"\n\n>>> ¡ANÁLISIS COMPLETADO!")
+    print(f"\n\n>>> ¡ANÁLISIS COMPLETADO!")
 
 if __name__ == "__main__":
     run_multi_view_analysis()

@@ -234,17 +234,16 @@ def apply_transformation_equations(rFL, rS3, rS9, rAFB, rS4, rS7, rS5, rS8):
     return {'FL': FL, 'S3': S3, 'S9': S9, 'AFB': AFB, 'S4': S4, 'S7': S7, 'S5': S5, 'S8': S8}
 
 def get_physical_region_scan(n_points=100000):
-    """Genera la nube de puntos de fondo (Región Física)."""
-    # Generamos puntos aleatorios en el espacio 'r'
+    """Genera la nube de puntos de la región física."""
     r_vals = {
-        'rFL': np.random.uniform(-4, 4, n_points),
-        'rS3': np.random.uniform(-4, 4, n_points),
-        'rS9': np.random.uniform(-4, 4, n_points),
-        'rAFB': np.random.uniform(-4, 4, n_points),
-        'rS4': np.random.uniform(-4, 4, n_points),
-        'rS7': np.random.uniform(-4, 4, n_points),
-        'rS5': np.random.uniform(-4, 4, n_points),
-        'rS8': np.random.uniform(-4, 4, n_points)
+        'rFL': np.random.uniform(-5, 5, n_points),
+        'rS3': np.random.uniform(-5, 5, n_points),
+        'rS9': np.random.uniform(-5, 5, n_points),
+        'rAFB': np.random.uniform(-5, 5, n_points),
+        'rS4': np.random.uniform(-5, 5, n_points),
+        'rS7': np.random.uniform(-5, 5, n_points),
+        'rS5': np.random.uniform(-5, 5, n_points),
+        'rS8': np.random.uniform(-5, 5, n_points)
     }
     # transforma a físico
     phys_dict = apply_transformation_equations(**r_vals)
