@@ -19,8 +19,11 @@ class FullAngular_Physical_PDF(zfit.pdf.BasePDF):
         cos_k = vars_list[1]
         phi   = vars_list[2]
         
-        sin_k = tf.sqrt(1.0 - cos_k**2)
-        sin_l = tf.sqrt(1.0 - cos_l**2)
+        # sin_k = tf.sqrt(1.0 - cos_k**2)
+        # sin_l = tf.sqrt(1.0 - cos_l**2)
+        # # Versión segura
+        sin_k = tf.sqrt(tf.maximum(1.0 - cos_k**2, 0.0))
+        sin_l = tf.sqrt(tf.maximum(1.0 - cos_l**2, 0.0))
         sin2_k = sin_k**2
         cos2_k = cos_k**2
         sin2_l = sin_l**2

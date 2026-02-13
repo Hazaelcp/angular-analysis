@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <string>
 #include <TMath.h>
@@ -154,18 +155,20 @@ void Bdmumukstar_ForXGboost_RDF(UInt_t year=2023, UInt_t sample=1, UInt_t channe
   if (sample==1){
     //tree.Add("/home/ghcp/Documentos/CINVESTAV/ANALISYS_B0tomumuKstar/CODES/ntuple_mumukstar_MiniAOD_Year2022_Sample1_Era1/*.root/treeBd");
     //tree.Add("/home/ghcp/Documentos/CINVESTAV/ANALISYS_B0tomumuKstar/CODES/ntuple_mumukstar_MiniAOD_Year2022_Sample1_Era1_low_m1.root/treeBd");
+    tree.Add("/home/ghcp/Documentos/CINVESTAV/ANALISYS_B0tomumuKstar/angular/codes/ntuple_mumukstar_MiniAOD_Year2022_Sample1_Era1.root/treeBd");
+
     cout << " Running for DATA \n";
   }
   else if(sample==2 && channel == 1){
-    tree.Add("/home/ghcp/Documentos/CINVESTAV/ANALISYS_B0tomumuKstar/angular/ntuple_mumukstar_MiniAOD_Year2022_Sample2_Era1.root/treeBd");
+    tree.Add("/home/ghcp/Documentos/CINVESTAV/ANALISYS_B0tomumuKstar/angular/codes/ntuple_mumukstar_MiniAOD_Year2022_Sample2_Era1.root/treeBd");
     cout << " Running for MC J/Psi \n";
   }
   else if (sample==2 && channel == 2){
-    tree.Add("/treeBd");
+    tree.Add("/home/ghcp/Documentos/CINVESTAV/ANALISYS_B0tomumuKstar/angular/codes/ntuple_mumukstar_MiniAOD_Year2022_Sample3_Era1.root/treeBd");
     cout << " Running for MC Psi(2S) \n";
   }
   else if(sample == 2 && channel == 3){
-    tree.Add("/treeBd");
+    tree.Add("/home/ghcp/Documentos/CINVESTAV/ANALISYS_B0tomumuKstar/angular/codes/ntuple_mumukstar_MiniAOD_Year2022_Sample4_Era1.root/treeBd");
     cout << " Running for MC NoRes\n";
 
   }
