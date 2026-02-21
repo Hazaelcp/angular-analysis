@@ -1,8 +1,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
-// Headers de RDataFrame
 #include <ROOT/RDataFrame.hxx>
 #include <ROOT/RDFHelpers.hxx>
 #include <ROOT/RVec.hxx>
@@ -28,9 +26,9 @@ void gen_Filter() {
     report->Print();
         
     ROOT::RDF::RSnapshotOptions opts;
-    opts.fMode = "RECREATE"; // Sobrescribir si existe
+    opts.fMode = "RECREATE"; 
     
     dDF_filtered.Snapshot(treeName, outputPath, "", opts);
 
-    std::cout << ">>> Proceso terminado exitosamente." << std::endl;
+    std::cout << ">>> Proceso terminado." << std::endl;
 }

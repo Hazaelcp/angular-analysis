@@ -11,16 +11,13 @@
 #include "Math/Vector3D.h"
 #include "Math/Boost.h"
 
-// Estructura para devolver los 3 ángulos juntos
 struct AngularVars {
     double costhetal;
     double costhetak;
     double phi;
 };
 
-// Función matemática de cálculo de ángulos
-AngularVars ComputeAngles(const TLorentzVector& mu_negative, const TLorentzVector& mu_positive, 
-                          const TLorentzVector& k,   const TLorentzVector& pi) 
+AngularVars ComputeAngles(const TLorentzVector& mu_negative, const TLorentzVector& mu_positive, const TLorentzVector& k,   const TLorentzVector& pi) 
 {
     const double MASS_MU = 0.105658;
     const double MASS_K  = 0.493677;
@@ -29,7 +26,7 @@ AngularVars ComputeAngles(const TLorentzVector& mu_negative, const TLorentzVecto
     using LV = ROOT::Math::PxPyPzMVector;
     using XYZVector = ROOT::Math::XYZVector;
 
-    // Convertir TLorentzVector a Math::Vector (más moderno y preciso para boosts)
+
     LV p_mu_minus(mu_negative.Px(), mu_negative.Py(), mu_negative.Pz(), MASS_MU);
     LV p_mu_plus(mu_positive.Px(),  mu_positive.Py(),  mu_positive.Pz(),  MASS_MU);
     
@@ -87,14 +84,12 @@ AngularVars ComputeAngles(const TLorentzVector& mu_negative, const TLorentzVecto
 }
 
 void AddAngularGen() {
-    // --- RUTAS DE ENTRADA Y SALIDA ---
     std::string input_pattern = "/home/ghcp/Documentos/CINVESTAV/ANALISYS_B0tomumuKstar/eficiencias/Analisys2025BdtomumuKstar_bacht2_OnlyGen_myv5/BdtoKstar2Mu_KstartoKPi_TuneCP5_13p6TeV_pythia8-evtgen/BdtomumuKstar_bacht2_OnlyGen_myv5/251005_190941/0000/*.root";
     std::string output_path   = "/home/ghcp/Documentos/CINVESTAV/ANALISYS_B0tomumuKstar/angular/efficiencies/datasets/GenLevel_Angular_Merged.root";
     std::string tree_name     = "rootuple/ntuple";
 
     std::cout << ">>> Initializing Analysis..." << std::endl;
 
-    // Cargar cadena de archivos
     TChain* chain = new TChain(tree_name.c_str());
     chain->Add(input_pattern.c_str());
 
@@ -103,7 +98,7 @@ void AddAngularGen() {
         return;
     }
 
-    // Punteros para leer las ramas del TLorentzVector
+    //leer las ramas del TLorentzVector
     TLorentzVector* b_p4 = nullptr;
     TLorentzVector* kstar_p4 = nullptr;
     TLorentzVector* kaon_p4 = nullptr;
@@ -111,7 +106,6 @@ void AddAngularGen() {
     TLorentzVector* mu1_p4 = nullptr;
     TLorentzVector* mu2_p4 = nullptr;
     
-    // Conectar ramas
     chain->SetBranchAddress("gen_b_p4", &b_p4);
     chain->SetBranchAddress("gen_kstar_p4", &kstar_p4);
     chain->SetBranchAddress("gen_kaon_p4", &kaon_p4);
@@ -119,25 +113,20 @@ void AddAngularGen() {
     chain->SetBranchAddress("gen_muon1_p4", &mu1_p4);
     chain->SetBranchAddress("gen_muon2_p4", &mu2_p4);
 
-    // Preparar archivo de salida
-    // Clonamos la estructura del árbol original (CloneTree(0)) para mantener las variables viejas
-    // y agregamos las nuestras.
     TFile* outfile = new TFile(output_path.c_str(), "RECREATE");
     TTree* newtree = chain->CloneTree(0);
 
-    // --- VARIABLES NUEVAS ---
     double cos_theta_l;
     double cos_theta_k;
     double phi_angle;
-    double q2_gen;       // Momento transferido al cuadrado
-    double mass_j_gen;   // Masa invariante dimuón (massJ)
+    double q2_gen;       
+    double mass_j_gen;  
 
-    // Crear las ramas nuevas en el árbol de salida
     newtree->Branch("gen_cosThetaL", &cos_theta_l, "gen_cosThetaL/D");
     newtree->Branch("gen_cosThetaK", &cos_theta_k, "gen_cosThetaK/D");
     newtree->Branch("gen_phi",       &phi_angle,   "gen_phi/D");
     newtree->Branch("q2Gen",         &q2_gen,      "q2Gen/D"); 
-    newtree->Branch("massJGen",      &mass_j_gen,  "massJGen/D"); // <--- Nueva Rama MassJ
+    newtree->Branch("massJGen",      &mass_j_gen,  "massJGen/D");
 
     Long64_t nentries = chain->GetEntries();
     int report_every = 100000;
@@ -152,20 +141,14 @@ void AddAngularGen() {
                       << " (" << (int)((double)i/nentries*100) << "%)" << std::endl;
         }
 
-        // Protección contra punteros nulos
         if (!mu1_p4 || !mu2_p4 || !kaon_p4 || !pion_p4) continue;
 
-        // --- CÁLCULOS FÍSICOS ---
-        
-        // 1. Reconstruir dimuón
         TLorentzVector dimuon = (*mu1_p4) + (*mu2_p4);
         
-        // 2. Calcular cinemática
-        q2_gen = dimuon.M2();     // Masa al cuadrado
-        mass_j_gen = dimuon.M();  // Masa invariante (sqrt(q2))
+        q2_gen = dimuon.M2();     
+        mass_j_gen = dimuon.M(); 
 
-        // 3. Calcular Ángulos
-        // Asumimos mu1 negativo y mu2 positivo (falta de ID en OnlyGen)
+        // mu1 negativo y mu2 positivo 
         AngularVars angles = ComputeAngles(*mu1_p4, *mu2_p4, *kaon_p4, *pion_p4);
 
         cos_theta_l = angles.costhetal;
