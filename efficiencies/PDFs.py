@@ -89,31 +89,31 @@ class FullAngular_Transformed_PDF(zfit.pdf.BasePDF):
         
         R2_trans_total = 0.25 * tf.square(FT)
         R2_available = R2_trans_total - tf.square(S3)
-        R2_available = tf.maximum(R2_available, 1e-18) 
+        R2_available = tf.maximum(R2_available, 1e-8) 
         R_trans = tf.sqrt(R2_available)
         S9 = R_trans * tf.math.tanh(self.params['rS9'])
         
         R2_rem_AFB = R2_available - tf.square(S9)
-        R2_rem_AFB = tf.maximum(R2_rem_AFB, 1e-18)
+        R2_rem_AFB = tf.maximum(R2_rem_AFB, 1e-8)
         limit_AFB = 1.5 * tf.sqrt(R2_rem_AFB)
         AFB = limit_AFB * tf.math.tanh(self.params['rAFB'])
         
         bound_mix1 = FL * (FT - 2.0 * S3)
-        bound_mix1 = tf.maximum(bound_mix1, 1e-18)
+        bound_mix1 = tf.maximum(bound_mix1, 1e-8)
         limit_S4 = 0.5 * tf.sqrt(bound_mix1)
         S4 = limit_S4 * tf.math.tanh(self.params['rS4'])
         
         R2_S7 = bound_mix1 - 4.0 * tf.square(S4)
-        R2_S7 = tf.maximum(R2_S7, 1e-18)
+        R2_S7 = tf.maximum(R2_S7, 1e-8)
         S7 = tf.sqrt(R2_S7) * tf.math.tanh(self.params['rS7'])
         
         bound_mix2 = FL * (FT + 2.0 * S3)
-        bound_mix2 = tf.maximum(bound_mix2, 1e-18)
+        bound_mix2 = tf.maximum(bound_mix2, 1e-8)
         limit_S5 = tf.sqrt(bound_mix2)
         S5 = limit_S5 * tf.math.tanh(self.params['rS5'])
         
         R2_S8 = bound_mix2 - tf.square(S5)
-        R2_S8 = tf.maximum(R2_S8, 1e-18)
+        R2_S8 = tf.maximum(R2_S8, 1e-8)
         limit_S8 = 0.5 * tf.sqrt(R2_S8)
         S8 = limit_S8 * tf.math.tanh(self.params['rS8'])
         
@@ -125,8 +125,10 @@ class FullAngular_Transformed_PDF(zfit.pdf.BasePDF):
         cos_k = vars_list[1]
         phi   = vars_list[2]
         
-        sin_k = tf.sqrt(1.0 - cos_k**2)
-        sin_l = tf.sqrt(1.0 - cos_l**2)
+        # sin_k = tf.sqrt(1.0 - cos_k**2)
+        # sin_l = tf.sqrt(1.0 - cos_l**2)
+        sin_k = tf.sqrt(tf.maximum(1.0 - cos_k**2, 0.0))
+        sin_l = tf.sqrt(tf.maximum(1.0 - cos_l**2, 0.0))        
         sin2_k = sin_k**2
         cos2_k = cos_k**2
         sin2_l = sin_l**2
@@ -175,27 +177,27 @@ def get_inverse_values(phys_params):
     rS3 = atanh(S3 / (0.5 * FT))
     
     R2_trans = 0.25 * FT**2 - S3**2
-    R_trans = np.sqrt(max(1e-15, R2_trans))
+    R_trans = np.sqrt(max(1e-8, R2_trans))
     rS9 = atanh(S9 / R_trans)
     
     R2_rem_AFB = R2_trans - S9**2
-    limit_AFB = 1.5 * np.sqrt(max(1e-15, R2_rem_AFB))
+    limit_AFB = 1.5 * np.sqrt(max(1e-8, R2_rem_AFB))
     rAFB = atanh(AFB / limit_AFB)
     
     bound_mix1 = FL * (FT - 2.0 * S3)
-    limit_S4 = 0.5 * np.sqrt(max(1e-15, bound_mix1))
+    limit_S4 = 0.5 * np.sqrt(max(1e-8, bound_mix1))
     rS4 = atanh(S4 / limit_S4)
     
     R2_S7 = bound_mix1 - 4.0 * S4**2
-    limit_S7 = np.sqrt(max(1e-15, R2_S7))
+    limit_S7 = np.sqrt(max(1e-8, R2_S7))
     rS7 = atanh(S7 / limit_S7)
     
     bound_mix2 = FL * (FT + 2.0 * S3)
-    limit_S5 = np.sqrt(max(1e-15, bound_mix2))
+    limit_S5 = np.sqrt(max(1e-8, bound_mix2))
     rS5 = atanh(S5 / limit_S5)
     
     R2_S8 = bound_mix2 - S5**2
-    limit_S8 = 0.5 * np.sqrt(max(1e-15, R2_S8))
+    limit_S8 = 0.5 * np.sqrt(max(1e-8, R2_S8))
     rS8 = atanh(S8 / limit_S8)
     
     return [rFL, rS3, rS9, rAFB, rS4, rS7, rS5, rS8]
@@ -211,26 +213,26 @@ def apply_transformation_equations(rFL, rS3, rS9, rAFB, rS4, rS7, rS5, rS8):
     limit_S3 = 0.5 * FT
     S3 = limit_S3 * np.tanh(rS3)
     
-    R2_trans = np.maximum(0.25 * FT**2 - S3**2, 1e-15)
+    R2_trans = np.maximum(0.25 * FT**2 - S3**2, 1e-8)
     R_trans = np.sqrt(R2_trans)
     S9 = R_trans * np.tanh(rS9)
     
-    R2_rem_AFB = np.maximum(R2_trans - S9**2, 1e-15)
+    R2_rem_AFB = np.maximum(R2_trans - S9**2, 1e-8)
     limit_AFB = 1.5 * np.sqrt(R2_rem_AFB)
     AFB = limit_AFB * np.tanh(rAFB)
     
-    bound_mix1 = np.maximum(FL * (FT - 2.0 * S3), 1e-15)
+    bound_mix1 = np.maximum(FL * (FT - 2.0 * S3), 1e-8)
     limit_S4 = 0.5 * np.sqrt(bound_mix1)
     S4 = limit_S4 * np.tanh(rS4)
     
-    R2_S7 = np.maximum(bound_mix1 - 4.0 * S4**2, 1e-15)
+    R2_S7 = np.maximum(bound_mix1 - 4.0 * S4**2, 1e-8)
     S7 = np.sqrt(R2_S7) * np.tanh(rS7)
     
-    bound_mix2 = np.maximum(FL * (FT + 2.0 * S3), 1e-15)
+    bound_mix2 = np.maximum(FL * (FT + 2.0 * S3), 1e-8)
     limit_S5 = np.sqrt(bound_mix2)
     S5 = limit_S5 * np.tanh(rS5)
     
-    R2_S8 = np.maximum(bound_mix2 - S5**2, 1e-15)
+    R2_S8 = np.maximum(bound_mix2 - S5**2, 1e-8)
     limit_S8 = 0.5 * np.sqrt(R2_S8)
     S8 = limit_S8 * np.tanh(rS8)
     

@@ -1,36 +1,51 @@
-
 ============================================================
 Procesando bin1 con rango q2: [1.1, 2.0]
 ============================================================
 
 ============================================================
->>> INICIANDO FIT GEN LEVEL (CONTROL)
+>>> INICIANDO FIT RECO)
 ============================================================
-name         value  (rounded)                minos    at limit
----------  ------------------  -------------------  ----------
-rFL_bin1             0.356771  - 0.0077   + 0.0077       False[0m
-rS3_bin1            -0.013809  -  0.028   +  0.028       False[0m
-rS9_bin1           0.00163622  -  0.029   +  0.028       False[0m
-rAFB_bin1           0.0164066  -  0.013   +  0.013       False[0m
-rS4_bin1            0.0938017  -  0.024   +  0.024       False[0m
-rS7_bin1            0.0344906  -  0.012   +  0.012       False[0m
-rS5_bin1          -0.00553913  -  0.012   +  0.012       False[0m
-rS8_bin1           -0.0241128  -  0.024   +  0.024       False[0m
-[CheckPoint] Resultados guardados en: fit_results/gen/bin1/fit_results_gen_transformed_bin1.json
+
+============================================================
+>>> RESULTADOS FINALES DEL FIT RECO
+============================================================
+FitResult of
+<UnbinnedNLL model=[<zfit.<class 'zfit.models.functor.ProductPDF'>  params=[]] data=[<zfit.core.data.Data object at 0x787cbffbb9a0>] constraints=[]> 
+with
+<Minuit Minuit tol=0.001>
+
+╒═════════╤═════════════╤══════════════════╤═════════╤══════════════════════════════════╕
+│  valid  │  converged  │  param at limit  │   edm   │   approx. fmin (full | internal) │
+╞═════════╪═════════════╪══════════════════╪═════════╪══════════════════════════════════╡
+│  True   │    True     │      False       │ 0.00035 │              7444.78 |  9929.662 │
+╘═════════╧═════════════╧══════════════════╧═════════╧══════════════════════════════════╛
+
+Parameters
+name              value  (rounded)                minos    at limit
+--------------  ------------------  -------------------  ----------
+rFL_bin1_reco             0.344652  -  0.031   +  0.032       False
+rS3_bin1_reco             0.109857  -  0.078   +  0.079       False
+rS9_bin1_reco           -0.0540708  -  0.078   +  0.078       False
+rAFB_bin1_reco          -0.0817468  -  0.072   +  0.073       False
+rS4_bin1_reco            -0.427616  -   0.17   +   0.14       False
+rS7_bin1_reco            0.0927552  -  0.048   +  0.049       False
+rS5_bin1_reco           -0.0013582  -  0.039   +   0.04       False
+rS8_bin1_reco            0.0308456  -   0.11   +   0.12       False
+[CheckPoint] Resultados guardados en: fit_results/reco/bin1/fit_results.json
 
 ------------------------------------------------------------
-RESUMEN DE OBSERVABLES FÍSICOS (Bin: bin1)
+RESUMEN DE OBSERVABLES FÍSICOS RECO (Bin: bin1)
 ------------------------------------------------------------
 Observable | Valor Físico   
 ------------------------------------------------------------
-FL         |        0.671183
-AFB        |        0.004045
-S3         |       -0.002270
-S4         |        0.022120
-S5         |       -0.002584
-S7         |        0.016237
-S8         |       -0.005623
-S9         |        0.000269
+FL         |        0.665812
+AFB        |       -0.020291
+S3         |        0.018283
+S4         |       -0.089771
+S5         |       -0.000675
+S7         |        0.037675
+S8         |        0.007660
+S9         |       -0.008972
 ------------------------------------------------------------
 
 
@@ -39,33 +54,49 @@ Procesando bin2 con rango q2: [2.0, 4.0]
 ============================================================
 
 ============================================================
->>> INICIANDO FIT GEN LEVEL (CONTROL)
+>>> INICIANDO FIT RECO)
 ============================================================
-name         value  (rounded)                minos    at limit
----------  ------------------  -------------------  ----------
-rFL_bin2             0.590745  - 0.0062   + 0.0062       False[0m
-rS3_bin2           0.00673454  -  0.026   +  0.026       False[0m
-rS9_bin2           -0.0368995  -  0.025   +  0.026       False[0m
-rAFB_bin2        -0.000671144  -  0.011   +  0.011       False[0m
-rS4_bin2            -0.600427  -  0.028   +  0.027       False[0m
-rS7_bin2            0.0235156  -  0.011   +  0.011       False[0m
-rS5_bin2            0.0132339  -  0.009   +  0.009       False[0m
-rS8_bin2           -0.0154494  -  0.018   +  0.018       False[0m
-[CheckPoint] Resultados guardados en: fit_results/gen/bin2/fit_results_gen_transformed_bin2.json
+
+============================================================
+>>> RESULTADOS FINALES DEL FIT RECO
+============================================================
+FitResult of
+<UnbinnedNLL model=[<zfit.<class 'zfit.models.functor.ProductPDF'>  params=[]] data=[<zfit.core.data.Data object at 0x787cbffbbb20>] constraints=[]> 
+with
+<Minuit Minuit tol=0.001>
+
+╒═════════╤═════════════╤══════════════════╤════════╤══════════════════════════════════╕
+│  valid  │  converged  │  param at limit  │  edm   │   approx. fmin (full | internal) │
+╞═════════╪═════════════╪══════════════════╪════════╪══════════════════════════════════╡
+│  True   │    True     │      False       │ 0.0003 │             15890.11 |  9643.172 │
+╘═════════╧═════════════╧══════════════════╧════════╧══════════════════════════════════╛
+
+Parameters
+name              value  (rounded)                minos    at limit
+--------------  ------------------  -------------------  ----------
+rFL_bin2_reco             0.502505  -  0.022   +  0.023       False
+rS3_bin2_reco            0.0760002  -  0.061   +  0.056       False
+rS9_bin2_reco            0.0364053  -  0.065   +  0.064       False
+rAFB_bin2_reco          -0.0196186  -   0.05   +  0.049       False
+rS4_bin2_reco             -3.45342  -      1   +    1.9       False
+rS7_bin2_reco              1.28137  -    6.2   +    6.2       False
+rS5_bin2_reco            -0.014429  -  0.029   +  0.029       False
+rS8_bin2_reco            0.0782057  -  0.076   +  0.077       False
+[CheckPoint] Resultados guardados en: fit_results/reco/bin2/fit_results.json
 
 ------------------------------------------------------------
-RESUMEN DE OBSERVABLES FÍSICOS (Bin: bin2)
+RESUMEN DE OBSERVABLES FÍSICOS RECO (Bin: bin2)
 ------------------------------------------------------------
 Observable | Valor Físico   
 ------------------------------------------------------------
-FL         |        0.765216
-AFB        |       -0.000118
-S3         |        0.000791
-S4         |       -0.113498
-S5         |        0.005628
-S7         |        0.008376
-S8         |       -0.003285
-S9         |       -0.004330
+FL         |        0.732042
+AFB        |       -0.003928
+S3         |        0.010163
+S4         |       -0.212457
+S5         |       -0.006628
+S7         |        0.023061
+S8         |        0.017925
+S9         |        0.004861
 ------------------------------------------------------------
 
 
@@ -74,33 +105,49 @@ Procesando bin3 con rango q2: [4.0, 6.0]
 ============================================================
 
 ============================================================
->>> INICIANDO FIT GEN LEVEL (CONTROL)
+>>> INICIANDO FIT RECO)
 ============================================================
-name         value  (rounded)                minos    at limit
----------  ------------------  -------------------  ----------
-rFL_bin3             0.418834  - 0.0053   + 0.0053       False[0m
-rS3_bin3           -0.0846804  -   0.02   +   0.02       False[0m
-rS9_bin3           -0.0291854  -   0.02   +   0.02       False[0m
-rAFB_bin3          0.00248543  - 0.0091   + 0.0091       False[0m
-rS4_bin3             -1.39647  -  0.086   +  0.074       False[0m
-rS7_bin3            0.0361674  -  0.017   +  0.017       False[0m
-rS5_bin3          -0.00237393  - 0.0081   + 0.0081       False[0m
-rS8_bin3           -0.0156057  -  0.017   +  0.017       False[0m
-[CheckPoint] Resultados guardados en: fit_results/gen/bin3/fit_results_gen_transformed_bin3.json
+
+============================================================
+>>> RESULTADOS FINALES DEL FIT RECO
+============================================================
+FitResult of
+<UnbinnedNLL model=[<zfit.<class 'zfit.models.functor.ProductPDF'>  params=[]] data=[<zfit.core.data.Data object at 0x787cc0d1b280>] constraints=[]> 
+with
+<Minuit Minuit tol=0.001>
+
+╒═════════╤═════════════╤══════════════════╤═════════╤══════════════════════════════════╕
+│  valid  │  converged  │  param at limit  │   edm   │   approx. fmin (full | internal) │
+╞═════════╪═════════════╪══════════════════╪═════════╪══════════════════════════════════╡
+│  True   │    True     │      False       │ 7.4e-05 │             18477.08 |  9697.613 │
+╘═════════╧═════════════╧══════════════════╧═════════╧══════════════════════════════════╛
+
+Parameters
+name              value  (rounded)                minos    at limit
+--------------  ------------------  -------------------  ----------
+rFL_bin3_reco             0.315175  -  0.019   +  0.019       False
+rS3_bin3_reco            -0.141236  -  0.049   +  0.048       False
+rS9_bin3_reco           -0.0128467  -  0.055   +  0.055       False
+rAFB_bin3_reco           0.0264545  -  0.034   +  0.034       False
+rS4_bin3_reco             -5.72411  -    5.9   +    3.6       False
+rS7_bin3_reco                1.294  -     13   +     13       False
+rS5_bin3_reco          -0.00998264  -  0.029   +  0.029       False
+rS8_bin3_reco              0.02914  -  0.068   +  0.068       False
+[CheckPoint] Resultados guardados en: fit_results/reco/bin3/fit_results.json
 
 ------------------------------------------------------------
-RESUMEN DE OBSERVABLES FÍSICOS (Bin: bin3)
+RESUMEN DE OBSERVABLES FÍSICOS RECO (Bin: bin3)
 ------------------------------------------------------------
 Observable | Valor Físico   
 ------------------------------------------------------------
-FL         |        0.697974
-AFB        |        0.000561
-S3         |       -0.012757
-S4         |       -0.211477
-S5         |       -0.001043
-S7         |        0.008062
-S8         |       -0.003428
-S9         |       -0.004390
+FL         |        0.652569
+AFB        |        0.006823
+S3         |       -0.024373
+S4         |       -0.254225
+S5         |       -0.004407
+S7         |        0.002857
+S8         |        0.006430
+S9         |       -0.002209
 ------------------------------------------------------------
 
 
@@ -109,33 +156,120 @@ Procesando bin4 con rango q2: [6.0, 7.0]
 ============================================================
 
 ============================================================
->>> INICIANDO FIT GEN LEVEL (CONTROL)
+>>> INICIANDO FIT RECO)
 ============================================================
-name         value  (rounded)                minos    at limit
----------  ------------------  -------------------  ----------
-rFL_bin4             0.251974  - 0.0065   + 0.0065       False[0m
-rS3_bin4           -0.0808173  -  0.022   +  0.022       False[0m
-rS9_bin4           -0.0202452  -  0.023   +  0.022       False[0m
-rAFB_bin4          0.00401492  -   0.01   +   0.01       False[0m
-rS4_bin4             -1.56325  -   0.16   +   0.12       False[0m
-rS7_bin4            0.0243549  -  0.023   +  0.025       False[0m
-rS5_bin4          -0.00735039  -   0.01   +   0.01       False[0m
-rS8_bin4           0.00413006  -  0.021   +  0.021       False[0m
-[CheckPoint] Resultados guardados en: fit_results/gen/bin4/fit_results_gen_transformed_bin4.json
+2026-02-24 23:14:18.996775: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01800 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:18.996941: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:14:18.997000: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:14:18.997062: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:14:19.018169: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:19.140284: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:19.140421: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:14:19.140469: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:14:19.140495: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:14:19.178272: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:19.279426: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc02000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:19.279599: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:14:19.279683: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:14:19.279725: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:14:19.416361: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:19.416497: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:14:19.416538: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:14:19.416558: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:14:19.436492: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:19.906530: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:19.906656: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:14:19.906695: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:14:19.906714: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:14:19.943445: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:20.030259: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:20.030403: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:14:20.030454: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:14:20.030483: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:14:20.154708: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01800 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:20.154846: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:14:20.154902: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:14:20.154933: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:14:20.191984: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:20.312005: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01800 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:20.312231: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:14:20.312282: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:14:20.312302: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:14:20.338832: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:20.428436: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:20.428627: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:14:20.428690: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:14:20.428733: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:14:20.515062: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01800 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:20.515227: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:14:20.515276: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:14:20.515313: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:14:20.581859: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01800 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:20.710873: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:20.711082: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:14:20.711150: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:14:20.711181: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:14:20.737672: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:20.822220: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:20.822447: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:14:20.822600: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:14:20.822647: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:14:20.970566: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:20.970812: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:14:20.970881: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:14:20.970922: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:14:20.972597: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:21.070955: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01800 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:21.071165: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:14:21.071237: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:14:21.071280: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:14:21.121427: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:21.216755: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:14:21.216892: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:14:21.216932: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:14:21.216956: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:14:21.279428: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+
+============================================================
+>>> RESULTADOS FINALES DEL FIT RECO
+============================================================
+FitResult of
+<UnbinnedNLL model=[<zfit.<class 'zfit.models.functor.ProductPDF'>  params=[]] data=[<zfit.core.data.Data object at 0x787cbf0b62b0>] constraints=[]> 
+with
+<Minuit Minuit tol=0.001>
+
+╒═════════╤═════════════╤══════════════════╤════════╤══════════════════════════════════╕
+│  valid  │  converged  │  param at limit  │  edm   │   approx. fmin (full | internal) │
+╞═════════╪═════════════╪══════════════════╪════════╪══════════════════════════════════╡
+│  True   │    True     │      False       │ 0.0005 │             12147.51 |  9833.241 │
+╘═════════╧═════════════╧══════════════════╧════════╧══════════════════════════════════╛
+
+Parameters
+name              value  (rounded)                minos    at limit
+--------------  ------------------  -------------------  ----------
+rFL_bin4_reco             0.144482  -  0.023   +  0.023       False
+rS3_bin4_reco            -0.121533  -  0.056   +  0.056       False
+rS9_bin4_reco           -0.0881584  -  0.065   +  0.064       False
+rAFB_bin4_reco         -0.00813555  -  0.035   +  0.036       False
+rS4_bin4_reco              -5.0177  -    4.2   +    2.4       False
+rS7_bin4_reco              1.19561  -    9.1   +    9.1       False
+rS5_bin4_reco           0.00413947  -  0.034   +  0.034       False
+rS8_bin4_reco            0.0194467  -  0.079   +   0.08       False
+[CheckPoint] Resultados guardados en: fit_results/reco/bin4/fit_results.json
 
 ------------------------------------------------------------
-RESUMEN DE OBSERVABLES FÍSICOS (Bin: bin4)
+RESUMEN DE OBSERVABLES FÍSICOS RECO (Bin: bin4)
 ------------------------------------------------------------
 Observable | Valor Físico   
 ------------------------------------------------------------
-FL         |        0.623387
-AFB        |        0.001130
-S3         |       -0.015185
-S4         |       -0.230678
-S5         |       -0.003415
-S7         |        0.004922
-S8         |        0.000959
-S9         |       -0.003799
+FL         |        0.571742
+AFB        |       -0.002584
+S3         |       -0.025896
+S4         |       -0.261924
+S5         |        0.001920
+S7         |        0.005773
+S8         |        0.004510
+S9         |       -0.018690
 ------------------------------------------------------------
 
 
@@ -144,33 +278,176 @@ Procesando bin5 con rango q2: [7.0, 8.0]
 ============================================================
 
 ============================================================
->>> INICIANDO FIT GEN LEVEL (CONTROL)
+>>> INICIANDO FIT RECO)
 ============================================================
-name         value  (rounded)                minos    at limit
----------  ------------------  -------------------  ----------
-rFL_bin5             0.154294  - 0.0061   + 0.0062       False[0m
-rS3_bin5            -0.134472  -   0.02   +   0.02       False[0m
-rS9_bin5           0.00416557  -   0.02   +   0.02       False[0m
-rAFB_bin5         -0.00643116  - 0.0094   + 0.0093       False[0m
-rS4_bin5             -1.95213  -   0.35   +    0.2       False[0m
-rS7_bin5            0.0339326  -  0.032   +  0.037       False[0m
-rS5_bin5           0.00127426  - 0.0098   + 0.0097       False[0m
-rS8_bin5            0.0214139  -  0.021   +  0.021       False[0m
-[CheckPoint] Resultados guardados en: fit_results/gen/bin5/fit_results_gen_transformed_bin5.json
+2026-02-24 23:18:35.847755: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:35.847916: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:35.847981: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:35.848019: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:35.908080: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:35.970029: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:35.970198: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:35.970227: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:35.970244: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:36.036839: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:36.119532: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:36.119638: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:36.119672: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:36.119689: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:36.204854: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:36.204976: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:36.205010: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:36.205027: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:36.271747: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:36.375783: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:36.375887: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:36.375923: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:36.375941: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:36.423789: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:36.512335: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000200 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:36.512487: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:36.512526: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:36.512545: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:36.626234: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01d00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:36.626444: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:36.626488: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:36.626515: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:36.663896: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:36.794558: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:36.794708: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:36.794753: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:36.794782: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:36.815633: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:36.900869: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000100 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:36.901020: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:36.901078: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:36.901104: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:36.983417: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:36.983549: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:36.983586: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:36.983604: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:37.062686: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:37.062842: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:37.062892: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:37.062918: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:37.129825: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:37.257113: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:37.257267: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:37.257331: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:37.257359: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:37.281770: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:37.398083: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:37.398275: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:37.398315: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:37.398334: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:37.432288: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:37.516295: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:37.516445: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:37.516484: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:37.516503: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:37.582931: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:37.653172: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc02000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:37.653383: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:37.653455: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:37.653491: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:37.719969: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01d00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:37.816834: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:37.816979: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:37.817024: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:37.817077: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:37.851031: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:38.252650: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:38.252773: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:38.252815: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:38.252840: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:38.370652: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:38.370797: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:38.370860: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:38.370892: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:38.397695: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:38.474651: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000200 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:38.474761: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:38.474798: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:38.474816: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:38.548703: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:38.548806: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:38.548837: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:38.548853: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:38.615362: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:38.690288: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:38.690527: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:38.690633: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:38.690693: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:38.756908: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:38.831695: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:38.831904: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:38.831973: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:38.831994: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:38.896979: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:38.897138: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:38.897178: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:38.897198: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:38.993327: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:38.993468: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:38.993511: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:38.993531: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:39.041227: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:39.119007: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:39.119132: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:39.119166: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:39.119186: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:39.185761: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:39.262239: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:39.262381: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:39.262439: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:39.262476: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:39.329217: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:39.408398: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:18:39.408546: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:18:39.408615: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:18:39.408660: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:18:39.474910: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+
+============================================================
+>>> RESULTADOS FINALES DEL FIT RECO
+============================================================
+FitResult of
+<UnbinnedNLL model=[<zfit.<class 'zfit.models.functor.ProductPDF'>  params=[]] data=[<zfit.core.data.Data object at 0x787cbfce07c0>] constraints=[]> 
+with
+<Minuit Minuit tol=0.001>
+
+╒═════════╤═════════════╤══════════════════╤════════╤══════════════════════════════════╕
+│  valid  │  converged  │  param at limit  │  edm   │   approx. fmin (full | internal) │
+╞═════════╪═════════════╪══════════════════╪════════╪══════════════════════════════════╡
+│  True   │    True     │      False       │ 0.0002 │             13432.22 |  9820.577 │
+╘═════════╧═════════════╧══════════════════╧════════╧══════════════════════════════════╛
+
+Parameters
+name              value  (rounded)                minos    at limit
+--------------  ------------------  -------------------  ----------
+rFL_bin5_reco            0.0677988  -  0.022   +  0.022       False
+rS3_bin5_reco            -0.150105  -  0.051   +  0.051       False
+rS9_bin5_reco          -0.00831259  -  0.059   +  0.059       False
+rAFB_bin5_reco           0.0577999  -  0.031   +  0.031       False
+rS4_bin5_reco             -3.96519  -    1.5   +    1.4       False
+rS7_bin5_reco              2.86889  -     17   +     17       False
+rS5_bin5_reco           -0.0205255  -  0.033   +  0.033       False
+rS8_bin5_reco             0.048742  -  0.076   +  0.077       False
+[CheckPoint] Resultados guardados en: fit_results/reco/bin5/fit_results.json
 
 ------------------------------------------------------------
-RESUMEN DE OBSERVABLES FÍSICOS (Bin: bin5)
+RESUMEN DE OBSERVABLES FÍSICOS RECO (Bin: bin5)
 ------------------------------------------------------------
 Observable | Valor Físico   
 ------------------------------------------------------------
-FL         |        0.576541
-AFB        |       -0.002024
-S3         |       -0.028301
-S4         |       -0.252653
-S5         |        0.000586
-S7         |        0.004967
-S8         |        0.004923
-S9         |        0.000874
+FL         |        0.533848
+AFB        |        0.019959
+S3         |       -0.034726
+S4         |       -0.267170
+S5         |       -0.009444
+S7         |        0.020144
+S8         |        0.011204
+S9         |       -0.001916
 ------------------------------------------------------------
 
 
@@ -179,33 +456,194 @@ Procesando bin7 con rango q2: [11.0, 12.5]
 ============================================================
 
 ============================================================
->>> INICIANDO FIT GEN LEVEL (CONTROL)
+>>> INICIANDO FIT RECO)
 ============================================================
-name         value  (rounded)                minos    at limit
----------  ------------------  -------------------  ----------
-rFL_bin7            -0.127238  - 0.0047   + 0.0046       False[0m
-rS3_bin7            -0.226668  -  0.011   +  0.011       False[0m
-rS9_bin7           -0.0129101  -  0.013   +  0.013       False[0m
-rAFB_bin7          0.00127955  - 0.0059   + 0.0059       False[0m
-rS4_bin7             -6.10604  -     19   +     19       False[0m
-rS7_bin7            -0.058329  -    1.4   +    1.4       False[0m
-rS5_bin7          -0.00261302  - 0.0075   + 0.0074       False[0m
-rS8_bin7            0.0180515  -  0.017   +  0.017       False[0m
-[CheckPoint] Resultados guardados en: fit_results/gen/bin7/fit_results_gen_transformed_bin7.json
+2026-02-24 23:25:15.932610: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc02000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:15.932723: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:25:15.932758: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:25:15.932776: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:25:15.999257: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01600 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:16.116535: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:16.116698: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:25:16.116735: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:25:16.116757: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:25:16.153842: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:16.244365: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01600 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:16.244551: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:25:16.244622: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:25:16.244670: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:25:16.310961: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01600 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:16.404023: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:16.404209: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:25:16.404249: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:25:16.404275: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:25:16.835302: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc02100 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:16.835439: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:25:16.835495: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:25:16.835530: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:25:16.902383: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:17.057187: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:17.057377: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:25:17.057442: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:25:17.057485: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:25:17.059906: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:17.181872: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:17.182081: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:25:17.182142: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:25:17.182164: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:25:17.219611: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:17.350982: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:17.351158: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:25:17.351226: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:25:17.351266: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:25:17.380308: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:17.524429: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:17.524564: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:25:17.524607: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:25:17.524629: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:25:17.530926: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:17.619450: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc02100 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:17.619569: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:25:17.619605: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:25:17.619626: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:25:17.686260: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:17.838705: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01600 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:17.838840: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:25:17.838884: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:25:17.838907: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:25:17.843432: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:17.937346: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:17.937471: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:25:17.937518: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:25:17.937536: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:25:18.003702: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:18.138777: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:18.138910: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:25:18.138950: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:25:18.138977: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:25:18.144568: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:18.246282: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:18.246404: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:25:18.246443: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:25:18.246463: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:25:18.284208: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:18.353558: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:25:18.353672: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:25:18.353701: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:25:18.353718: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:26:12.713324: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:12.713456: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:26:12.713500: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:26:12.713519: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:26:12.715953: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:12.774425: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:12.774467: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:26:12.774481: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:26:12.774488: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:26:12.797059: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:12.797089: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:26:12.797096: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:26:12.797102: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:26:12.863616: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:12.909849: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:12.909880: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:26:12.909888: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:26:12.909893: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:26:12.976509: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:13.339596: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc02000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:13.339690: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:26:13.339717: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:26:13.339735: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:26:13.406366: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:13.439181: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:13.439213: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:26:13.439220: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:26:13.439226: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:26:13.457315: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:13.457349: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:26:13.457356: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:26:13.457361: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:26:13.523766: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:13.567880: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:13.567934: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:26:13.567955: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:26:13.567968: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:26:13.634660: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:13.753629: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:13.753756: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:26:13.753801: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:26:13.753824: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:26:13.759944: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:13.811818: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:13.811856: I tensorflow/core/framework/local_rendezvous.cc:409] Local rendezvous send item cancelled. Key hash: 6756790693446324359
+2026-02-24 23:26:13.811863: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:26:13.811873: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:26:13.811878: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:26:13.839615: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:13.839646: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:26:13.839654: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:26:13.839659: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:26:13.906252: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:13.944364: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:13.944396: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:26:13.944404: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:26:13.944408: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:26:13.962323: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:13.962354: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:26:13.962362: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:26:13.962366: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:26:14.028773: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:14.071251: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc02100 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:14.071283: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:26:14.071290: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:26:14.071295: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:26:14.137998: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:14.176408: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787b0f000000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-02-24 23:26:14.176446: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 18033421085661678410
+2026-02-24 23:26:14.176457: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 14299681204227034802
+2026-02-24 23:26:14.176462: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous recv item cancelled. Key hash: 17998502701496684496
+2026-02-24 23:26:14.242935: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x787aabc01e00 = {1, 0} Check if pdf output contains any NaNs of Infs
+
+============================================================
+>>> RESULTADOS FINALES DEL FIT RECO
+============================================================
+FitResult of
+<UnbinnedNLL model=[<zfit.<class 'zfit.models.functor.ProductPDF'>  params=[]] data=[<zfit.core.data.Data object at 0x787cbed97ac0>] constraints=[]> 
+with
+<Minuit Minuit tol=0.001>
+
+╒═════════╤═════════════╤══════════════════╤════════╤══════════════════════════════════╕
+│  valid  │  converged  │  param at limit  │  edm   │   approx. fmin (full | internal) │
+╞═════════╪═════════════╪══════════════════╪════════╪══════════════════════════════════╡
+│  True   │    True     │      False       │ 0.0052 │             31717.37 |  9545.938 │
+╘═════════╧═════════════╧══════════════════╧════════╧══════════════════════════════════╛
+
+Parameters
+name              value  (rounded)                minos    at limit
+--------------  ------------------  -------------------  ----------
+rFL_bin7_reco            -0.213249  -  0.015   +  0.015       False
+rS3_bin7_reco            -0.119734  -  0.036   +  0.031       False
+rS9_bin7_reco           -0.0349227  -   0.04   +  0.035       False
+rAFB_bin7_reco          -0.0131611  -  0.016   +  0.018       False
+rS4_bin7_reco             -6.84665  +    6.8   +    2.3       False
+rS7_bin7_reco            -0.528826  -     54   +     54       False
+rS5_bin7_reco           0.00589316  -  0.023   +  0.022       False
+rS8_bin7_reco            0.0114648  -  0.052   +  0.048       False
+[CheckPoint] Resultados guardados en: fit_results/reco/bin7/fit_results.json
 
 ------------------------------------------------------------
-RESUMEN DE OBSERVABLES FÍSICOS (Bin: bin7)
+RESUMEN DE OBSERVABLES FÍSICOS RECO (Bin: bin7)
 ------------------------------------------------------------
 Observable | Valor Físico   
 ------------------------------------------------------------
-FL         |        0.436722
-AFB        |        0.000527
-S3         |       -0.062767
-S4         |       -0.274232
-S5         |       -0.001142
-S7         |       -0.000142
-S8         |        0.003946
-S9         |       -0.003544
+FL         |        0.394963
+AFB        |       -0.005926
+S3         |       -0.036050
+S4         |       -0.258574
+S5         |        0.002704
+S7         |       -0.000533
+S8         |        0.002630
+S9         |       -0.010485
 ------------------------------------------------------------
 
 
@@ -214,33 +652,49 @@ Procesando bin9 con rango q2: [15.0, 17.0]
 ============================================================
 
 ============================================================
->>> INICIANDO FIT GEN LEVEL (CONTROL)
+>>> INICIANDO FIT RECO)
 ============================================================
-name         value  (rounded)                minos    at limit
----------  ------------------  -------------------  ----------
-rFL_bin9            -0.296766  - 0.0046   + 0.0046       False[0m
-rS3_bin9            -0.517678  -  0.012   +  0.011       False[0m
-rS9_bin9            0.0140474  -  0.011   +  0.012       False[0m
-rAFB_bin9          0.00409611  - 0.0052   + 0.0057       False[0m
-rS4_bin9             -4.84329  -    5.5   +    5.5       False[0m
-rS7_bin9             -3.38018  -5.2e+02   +5.2e+02       False[0m
-rS5_bin9           0.00202088  - 0.0084   + 0.0084       False[0m
-rS8_bin9            0.0244471  -   0.02   +   0.02       False[0m
-[CheckPoint] Resultados guardados en: fit_results/gen/bin9/fit_results_gen_transformed_bin9.json
+
+============================================================
+>>> RESULTADOS FINALES DEL FIT RECO
+============================================================
+FitResult of
+<UnbinnedNLL model=[<zfit.<class 'zfit.models.functor.ProductPDF'>  params=[]] data=[<zfit.core.data.Data object at 0x787cc0dfd7c0>] constraints=[]> 
+with
+<Minuit Minuit tol=0.001>
+
+╒═════════╤═════════════╤══════════════════╤═════════╤══════════════════════════════════╕
+│  valid  │  converged  │  param at limit  │   edm   │   approx. fmin (full | internal) │
+╞═════════╪═════════════╪══════════════════╪═════════╪══════════════════════════════════╡
+│  True   │    True     │      False       │ 2.3e-05 │             42491.66 |  9254.752 │
+╘═════════╧═════════════╧══════════════════╧═════════╧══════════════════════════════════╛
+
+Parameters
+name              value  (rounded)                minos    at limit
+--------------  ------------------  -------------------  ----------
+rFL_bin9_reco            -0.349043  -  0.014   +  0.014       False
+rS3_bin9_reco            -0.339381  -  0.032   +  0.031       False
+rS9_bin9_reco            0.0166422  -   0.03   +   0.03       False
+rAFB_bin9_reco         -0.00818567  -  0.014   +  0.014       False
+rS4_bin9_reco             -1.16843  -   0.12   +  0.097       False
+rS7_bin9_reco           -0.0410971  -  0.031   +   0.03       False
+rS5_bin9_reco           -0.0138527  -  0.022   +  0.022       False
+rS8_bin9_reco           -0.0677886  -  0.049   +  0.049       False
+[CheckPoint] Resultados guardados en: fit_results/reco/bin9/fit_results.json
 
 ------------------------------------------------------------
-RESUMEN DE OBSERVABLES FÍSICOS (Bin: bin9)
+RESUMEN DE OBSERVABLES FÍSICOS RECO (Bin: bin9)
 ------------------------------------------------------------
 Observable | Valor Físico   
 ------------------------------------------------------------
-FL         |        0.355825
-AFB        |        0.001740
-S3         |       -0.153283
-S4         |       -0.290781
-S5         |        0.000700
-S7         |       -0.009146
-S8         |        0.004236
-S9         |        0.003979
+FL         |        0.332237
+AFB        |       -0.003874
+S3         |       -0.109154
+S4         |       -0.223478
+S5         |       -0.005353
+S7         |       -0.012634
+S8         |       -0.013076
+S9         |        0.005251
 ------------------------------------------------------------
 
 
@@ -249,32 +703,47 @@ Procesando bin10 con rango q2: [17.0, 23.0]
 ============================================================
 
 ============================================================
->>> INICIANDO FIT GEN LEVEL (CONTROL)
+>>> INICIANDO FIT RECO)
 ============================================================
-name          value  (rounded)                minos    at limit
-----------  ------------------  -------------------  ----------
-rFL_bin10            -0.335178  -  0.006   +  0.006       False[0m
-rS3_bin10            -0.821049  -  0.014   +  0.021       False[0m
-rS9_bin10           0.00101306  -  0.017   +  0.017       False[0m
-rAFB_bin10         0.000160021  - 0.0085   + 0.0085       False[0m
-rS4_bin10             -3.38271  -    2.6   +   0.92       False[0m
-rS7_bin10           -0.0563866  -   0.18   +   0.18       False[0m
-rS5_bin10           0.00639542  -  0.013   +  0.013       False[0m
-rS8_bin10          -0.00223863  -  0.033   +  0.033       False[0m
-[CheckPoint] Resultados guardados en: fit_results/gen/bin10/fit_results_gen_transformed_bin10.json
+
+============================================================
+>>> RESULTADOS FINALES DEL FIT RECO
+============================================================
+FitResult of
+<UnbinnedNLL model=[<zfit.<class 'zfit.models.functor.ProductPDF'>  params=[]] data=[<zfit.core.data.Data object at 0x787cbf1e1ca0>] constraints=[]> 
+with
+<Minuit Minuit tol=0.001>
+
+╒═════════╤═════════════╤══════════════════╤═══════╤══════════════════════════════════╕
+│  valid  │  converged  │  param at limit  │  edm  │   approx. fmin (full | internal) │
+╞═════════╪═════════════╪══════════════════╪═══════╪══════════════════════════════════╡
+│  True   │    True     │      False       │ 0.001 │              26848.11 |  9405.57 │
+╘═════════╧═════════════╧══════════════════╧═══════╧══════════════════════════════════╛
+
+Parameters
+name               value  (rounded)                minos    at limit
+---------------  ------------------  -------------------  ----------
+rFL_bin10_reco            -0.375475  -  0.017   +  0.017       False
+rS3_bin10_reco            -0.604398  -  0.047   +  0.048       False
+rS9_bin10_reco           -0.0124761  -  0.041   +  0.041       False
+rAFB_bin10_reco           0.0269517  -   0.02   +   0.02       False
+rS4_bin10_reco             -1.00094  -    0.1   +  0.085       False
+rS7_bin10_reco           -0.0116362  -  0.032   +  0.031       False
+rS5_bin10_reco           -0.0812869  -  0.032   +  0.034       False
+rS8_bin10_reco            -0.117736  -  0.078   +  0.079       False
+[CheckPoint] Resultados guardados en: fit_results/reco/bin10/fit_results.json
 
 ------------------------------------------------------------
-RESUMEN DE OBSERVABLES FÍSICOS (Bin: bin10)
+RESUMEN DE OBSERVABLES FÍSICOS RECO (Bin: bin10)
 ------------------------------------------------------------
 Observable | Valor Físico   
 ------------------------------------------------------------
-FL         |        0.338417
-AFB        |        0.000059
-S3         |       -0.223496
-S4         |       -0.305546
-S5         |        0.001723
-S7         |       -0.002340
-S8         |       -0.000302
-S9         |        0.000247
+FL         |        0.320614
+AFB        |        0.011553
+S3         |       -0.183493
+S4         |       -0.220675
+S5         |       -0.025669
+S7         |       -0.004364
+S8         |       -0.018484
+S9         |       -0.003566
 ------------------------------------------------------------
-
