@@ -1,0 +1,9 @@
+Parameter	Value	Error
+FL_bin9_reco	0.322444	0.006011
+S3_bin9_reco	-0.084690	0.009572
+S9_bin9_reco	0.013213	0.009630
+AFB_bin9_reco	0.013372	0.006604
+S4_bin9_reco	-0.236513	0.008640
+S7_bin9_reco	0.001503	0.009203
+S5_bin9_reco	0.014879	0.008696
+S8_bin9_reco	-0.005814	0.009454

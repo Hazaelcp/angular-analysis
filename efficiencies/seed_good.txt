@@ -1,0 +1,1615 @@
+Lista de semillas a procesar: [86, 148, 67, 177, 199, 545, 538, 485, 662, 624, 815, 85, 19, 93, 584, 156, 827, 39, 899, 268, 316, 692, 650, 84, 587, 531, 465, 212, 370, 979, 171, 607, 2, 726, 426, 134, 347, 99, 537, 162, 895, 861, 441, 518, 266, 499, 715, 858, 629, 361, 394, 487, 912, 188, 800, 734, 221, 219, 323, 444, 539, 589, 888, 826, 63, 393, 541, 633, 580, 891, 598, 37, 381, 261, 270, 967, 454, 839, 991, 644, 555, 664, 743, 763, 70, 88, 389, 549, 813, 690, 978, 203, 706, 809, 794, 220, 38, 551, 112, 338]
+2026-03-13 22:49:15.661152: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-03-13 22:49:15.751557: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-03-13 22:49:15.753875: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-03-13 22:49:15.757512: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-03-13 22:49:15.759751: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-03-13 22:49:15.761723: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-03-13 22:49:15.881987: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-03-13 22:49:15.883890: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-03-13 22:49:15.885458: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-03-13 22:49:15.886998: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 2780 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 4050 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.9
+
+============================================================
+Iteración: 0 | Procesando bin9, semilla 86 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30942 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter0 tiene errores altos (Lower: 0.0130, Upper: 2.4063)
+>>> Saltando impresión y guardado para bin9 en iteración 0 debido a errores grandes.
+
+
+============================================================
+Iteración: 1 | Procesando bin9, semilla 148 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30813 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter1 tiene errores altos (Lower: 2.6877, Upper: 0.3653)
+>>> Saltando impresión y guardado para bin9 en iteración 1 debido a errores grandes.
+
+
+============================================================
+Iteración: 2 | Procesando bin9, semilla 67 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31122 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter2 tiene errores altos (Lower: 0.6380, Upper: 1.9879)
+>>> Saltando impresión y guardado para bin9 en iteración 2 debido a errores grandes.
+
+
+============================================================
+Iteración: 3 | Procesando bin9, semilla 177 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31105 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter3 tiene errores altos (Lower: 2.6761, Upper: 0.3719)
+>>> Saltando impresión y guardado para bin9 en iteración 3 debido a errores grandes.
+
+
+============================================================
+Iteración: 4 | Procesando bin9, semilla 199 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31223 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter4 tiene errores altos (Lower: 2.0321, Upper: 0.8057)
+>>> Saltando impresión y guardado para bin9 en iteración 4 debido a errores grandes.
+
+
+============================================================
+Iteración: 5 | Procesando bin9, semilla 545 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30974 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter5 tiene errores altos (Lower: 0.0158, Upper: 2.2842)
+>>> Saltando impresión y guardado para bin9 en iteración 5 debido a errores grandes.
+
+
+============================================================
+Iteración: 6 | Procesando bin9, semilla 538 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30950 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+>>> Ajuste exitoso con errores pequeños. Procesando y guardando resultados...
+
+name               value  (rounded)                minos    at limit
+---------------  ------------------  -------------------  ----------
+rFL_bin9_iter6            -0.286982  - 0.0084   + 0.0084       False
+rS3_bin9_iter6            -0.511427  -  0.024   +  0.024       False
+rS9_bin9_iter6           -0.0188642  -  0.022   +  0.022       False
+rAFB_bin9_iter6           0.0067262  -  0.011   +  0.011       False
+rS4_bin9_iter6              -2.1121  -   0.63   +   0.27       False
+rS7_bin9_iter6            0.0614125  -  0.045   +  0.074       False
+rS5_bin9_iter6           0.00666211  -  0.015   +  0.015       False
+rS8_bin9_iter6            0.0695233  -  0.037   +  0.037       False
+[CheckPoint] Resultados guardados en: fit_results/gen_transformed/bin9/fit_results_gen_physical_bin9.json
+
+--------------------------------------------------------------------------------
+RESUMEN DE OBSERVABLES FÍSICOS (Bin: bin9)
+--------------------------------------------------------------------------------
+Observable | Valor Físico    | Error                    
+--------------------------------------------------------------------------------
+FL         |        0.360323 | +/- 0.003893       
+AFB        |        0.002846 | +/- 0.004470       
+S3         |       -0.150662 | +/- 0.005981       
+S4         |       -0.282746 | +/- 0.005528       
+S5         |        0.002326 | +/- 0.005377       
+S7         |        0.008517 | +/- 0.006124       
+S8         |        0.012118 | +/- 0.006461       
+S9         |       -0.005322 | +/- 0.006118       
+--------------------------------------------------------------------------------
+
+
+============================================================
+Iteración: 7 | Procesando bin9, semilla 485 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31086 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter7 tiene errores altos (Lower: 0.6754, Upper: 1.9931)
+>>> Saltando impresión y guardado para bin9 en iteración 7 debido a errores grandes.
+
+
+============================================================
+Iteración: 8 | Procesando bin9, semilla 662 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30822 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter8 tiene errores altos (Lower: 2.4781, Upper: 0.4914)
+>>> Saltando impresión y guardado para bin9 en iteración 8 debido a errores grandes.
+
+
+============================================================
+Iteración: 9 | Procesando bin9, semilla 624 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31160 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter9 tiene errores altos (Lower: 0.0002, Upper: 2.4915)
+>>> Saltando impresión y guardado para bin9 en iteración 9 debido a errores grandes.
+
+
+============================================================
+Iteración: 10 | Procesando bin9, semilla 815 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31111 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter10 tiene errores altos (Lower: 2.3824, Upper: 0.5463)
+>>> Saltando impresión y guardado para bin9 en iteración 10 debido a errores grandes.
+
+
+============================================================
+Iteración: 11 | Procesando bin9, semilla 85 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31116 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter11 tiene errores altos (Lower: 0.0290, Upper: 2.3314)
+>>> Saltando impresión y guardado para bin9 en iteración 11 debido a errores grandes.
+
+
+============================================================
+Iteración: 12 | Procesando bin9, semilla 19 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30891 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter12 tiene errores altos (Lower: 0.0008, Upper: 2.2889)
+>>> Saltando impresión y guardado para bin9 en iteración 12 debido a errores grandes.
+
+
+============================================================
+Iteración: 13 | Procesando bin9, semilla 93 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31022 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter13 tiene errores altos (Lower: 0.3326, Upper: 1.9287)
+>>> Saltando impresión y guardado para bin9 en iteración 13 debido a errores grandes.
+
+
+============================================================
+Iteración: 14 | Procesando bin9, semilla 584 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31004 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter14 tiene errores altos (Lower: 2.2634, Upper: 0.6271)
+>>> Saltando impresión y guardado para bin9 en iteración 14 debido a errores grandes.
+
+
+============================================================
+Iteración: 15 | Procesando bin9, semilla 156 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30944 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter15 tiene errores altos (Lower: 0.2400, Upper: 1.9224)
+>>> Saltando impresión y guardado para bin9 en iteración 15 debido a errores grandes.
+
+
+============================================================
+Iteración: 16 | Procesando bin9, semilla 827 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31154 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter16 tiene errores altos (Lower: 0.0157, Upper: 2.5815)
+>>> Saltando impresión y guardado para bin9 en iteración 16 debido a errores grandes.
+
+
+============================================================
+Iteración: 17 | Procesando bin9, semilla 39 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31240 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter17 tiene errores altos (Lower: 2.2337, Upper: 0.6470)
+>>> Saltando impresión y guardado para bin9 en iteración 17 debido a errores grandes.
+
+
+============================================================
+Iteración: 18 | Procesando bin9, semilla 899 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31125 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter18 tiene errores altos (Lower: 2.0899, Upper: 0.6772)
+>>> Saltando impresión y guardado para bin9 en iteración 18 debido a errores grandes.
+
+
+============================================================
+Iteración: 19 | Procesando bin9, semilla 268 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30944 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter19 tiene errores altos (Lower: 2.3716, Upper: 0.5529)
+>>> Saltando impresión y guardado para bin9 en iteración 19 debido a errores grandes.
+
+
+============================================================
+Iteración: 20 | Procesando bin9, semilla 316 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30741 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter20 tiene errores altos (Lower: 2.7047, Upper: 0.3587)
+>>> Saltando impresión y guardado para bin9 en iteración 20 debido a errores grandes.
+
+
+============================================================
+Iteración: 21 | Procesando bin9, semilla 692 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30967 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter21 tiene errores altos (Lower: 0.0000, Upper: 2.4233)
+>>> Saltando impresión y guardado para bin9 en iteración 21 debido a errores grandes.
+
+
+============================================================
+Iteración: 22 | Procesando bin9, semilla 650 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30841 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter22 tiene errores altos (Lower: 0.0003, Upper: 1.9410)
+>>> Saltando impresión y guardado para bin9 en iteración 22 debido a errores grandes.
+
+
+============================================================
+Iteración: 23 | Procesando bin9, semilla 84 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31063 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter23 tiene errores altos (Lower: 2.2099, Upper: 0.6652)
+>>> Saltando impresión y guardado para bin9 en iteración 23 debido a errores grandes.
+
+
+============================================================
+Iteración: 24 | Procesando bin9, semilla 587 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30980 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter24 tiene errores altos (Lower: 1.8197, Upper: 0.3409)
+>>> Saltando impresión y guardado para bin9 en iteración 24 debido a errores grandes.
+
+
+============================================================
+Iteración: 25 | Procesando bin9, semilla 531 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31357 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter25 tiene errores altos (Lower: 0.3318, Upper: 1.5338)
+>>> Saltando impresión y guardado para bin9 en iteración 25 debido a errores grandes.
+
+
+============================================================
+Iteración: 26 | Procesando bin9, semilla 465 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30952 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter26 tiene errores altos (Lower: 1.3547, Upper: 0.3373)
+>>> Saltando impresión y guardado para bin9 en iteración 26 debido a errores grandes.
+
+
+============================================================
+Iteración: 27 | Procesando bin9, semilla 212 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31284 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter27 tiene errores altos (Lower: 0.3007, Upper: 1.8154)
+>>> Saltando impresión y guardado para bin9 en iteración 27 debido a errores grandes.
+
+
+============================================================
+Iteración: 28 | Procesando bin9, semilla 370 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31014 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter28 tiene errores altos (Lower: 0.6098, Upper: 2.1090)
+>>> Saltando impresión y guardado para bin9 en iteración 28 debido a errores grandes.
+
+
+============================================================
+Iteración: 29 | Procesando bin9, semilla 979 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30761 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter29 tiene errores altos (Lower: 0.9171, Upper: 1.7840)
+>>> Saltando impresión y guardado para bin9 en iteración 29 debido a errores grandes.
+
+
+============================================================
+Iteración: 30 | Procesando bin9, semilla 171 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31055 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+2026-03-13 23:04:15.451047: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:15.798148: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:15.818866: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:15.836673: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:15.859180: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:15.896638: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:15.934931: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:15.971466: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:16.046943: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:16.067675: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:16.090468: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:16.110192: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:16.143910: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:16.181661: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:16.220519: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:16.262178: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:16.299387: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:16.339133: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:04:16.367253: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+  -> Descartado: rS4_bin9_iter30 tiene errores altos (Lower: 0.0000, Upper: 2.3646)
+>>> Saltando impresión y guardado para bin9 en iteración 30 debido a errores grandes.
+
+
+============================================================
+Iteración: 31 | Procesando bin9, semilla 607 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31084 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter31 tiene errores altos (Lower: 2.1994, Upper: 0.6681)
+>>> Saltando impresión y guardado para bin9 en iteración 31 debido a errores grandes.
+
+
+============================================================
+Iteración: 32 | Procesando bin9, semilla 2 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31100 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter32 tiene errores altos (Lower: 0.2659, Upper: 2.1400)
+>>> Saltando impresión y guardado para bin9 en iteración 32 debido a errores grandes.
+
+
+============================================================
+Iteración: 33 | Procesando bin9, semilla 726 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31051 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter33 tiene errores altos (Lower: 1.9589, Upper: 0.8535)
+>>> Saltando impresión y guardado para bin9 en iteración 33 debido a errores grandes.
+
+
+============================================================
+Iteración: 34 | Procesando bin9, semilla 426 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31206 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter34 tiene errores altos (Lower: 0.0002, Upper: 2.3763)
+>>> Saltando impresión y guardado para bin9 en iteración 34 debido a errores grandes.
+
+
+============================================================
+Iteración: 35 | Procesando bin9, semilla 134 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31094 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter35 tiene errores altos (Lower: 0.0059, Upper: 2.4429)
+>>> Saltando impresión y guardado para bin9 en iteración 35 debido a errores grandes.
+
+
+============================================================
+Iteración: 36 | Procesando bin9, semilla 347 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31059 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter36 tiene errores altos (Lower: 0.0036, Upper: 2.4001)
+>>> Saltando impresión y guardado para bin9 en iteración 36 debido a errores grandes.
+
+
+============================================================
+Iteración: 37 | Procesando bin9, semilla 99 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31347 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+>>> Ajuste exitoso con errores pequeños. Procesando y guardando resultados...
+
+name                value  (rounded)                minos    at limit
+----------------  ------------------  -------------------  ----------
+rFL_bin9_iter37            -0.303421  - 0.0084   + 0.0084       False
+rS3_bin9_iter37            -0.537361  -  0.024   +  0.024       False
+rS9_bin9_iter37          -0.00980389  -  0.022   +  0.022       False
+rAFB_bin9_iter37        -0.000310468  -  0.011   +  0.011       False
+rS4_bin9_iter37             -2.08708  -   0.57   +   0.26       False
+rS7_bin9_iter37           -0.0203899  -   0.05   +  0.043       False
+rS5_bin9_iter37           -0.0174325  -  0.016   +  0.016       False
+rS8_bin9_iter37           -0.0188671  -  0.038   +  0.038       False
+[CheckPoint] Resultados guardados en: fit_results/gen_transformed/bin9/fit_results_gen_physical_bin9.json
+
+--------------------------------------------------------------------------------
+RESUMEN DE OBSERVABLES FÍSICOS (Bin: bin9)
+--------------------------------------------------------------------------------
+Observable | Valor Físico    | Error                    
+--------------------------------------------------------------------------------
+FL         |        0.352780 | +/- 0.003842       
+AFB        |       -0.000131 | +/- 0.004456       
+S3         |       -0.158889 | +/- 0.005873       
+S4         |       -0.282890 | +/- 0.005423       
+S5         |       -0.005942 | +/- 0.005328       
+S7         |       -0.002906 | +/- 0.006088       
+S8         |       -0.003215 | +/- 0.006431       
+S9         |       -0.002764 | +/- 0.006100       
+--------------------------------------------------------------------------------
+
+
+============================================================
+Iteración: 38 | Procesando bin9, semilla 537 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30912 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter38 tiene errores altos (Lower: 2.6644, Upper: 0.3896)
+>>> Saltando impresión y guardado para bin9 en iteración 38 debido a errores grandes.
+
+
+============================================================
+Iteración: 39 | Procesando bin9, semilla 162 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31009 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter39 tiene errores altos (Lower: 1.8632, Upper: 0.9299)
+>>> Saltando impresión y guardado para bin9 en iteración 39 debido a errores grandes.
+
+
+============================================================
+Iteración: 40 | Procesando bin9, semilla 895 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31013 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter40 tiene errores altos (Lower: 2.5527, Upper: 0.4450)
+>>> Saltando impresión y guardado para bin9 en iteración 40 debido a errores grandes.
+
+
+============================================================
+Iteración: 41 | Procesando bin9, semilla 861 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31122 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter41 tiene errores altos (Lower: 0.0855, Upper: 2.4123)
+>>> Saltando impresión y guardado para bin9 en iteración 41 debido a errores grandes.
+
+
+============================================================
+Iteración: 42 | Procesando bin9, semilla 441 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30744 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+>>> Ajuste exitoso con errores pequeños. Procesando y guardando resultados...
+
+name                value  (rounded)                minos    at limit
+----------------  ------------------  -------------------  ----------
+rFL_bin9_iter42            -0.284792  - 0.0084   + 0.0085       False
+rS3_bin9_iter42            -0.508578  -  0.024   +  0.024       False
+rS9_bin9_iter42            0.0102899  -  0.022   +  0.022       False
+rAFB_bin9_iter42          0.00201818  -  0.011   +  0.011       False
+rS4_bin9_iter42             -2.02189  -   0.47   +   0.24       False
+rS7_bin9_iter42           0.00446848  -  0.042   +  0.044       False
+rS5_bin9_iter42            0.0193562  -  0.016   +  0.016       False
+rS8_bin9_iter42           -0.0475773  -  0.038   +  0.036       False
+[CheckPoint] Resultados guardados en: fit_results/gen_transformed/bin9/fit_results_gen_physical_bin9.json
+
+--------------------------------------------------------------------------------
+RESUMEN DE OBSERVABLES FÍSICOS (Bin: bin9)
+--------------------------------------------------------------------------------
+Observable | Valor Físico    | Error                    
+--------------------------------------------------------------------------------
+FL         |        0.361333 | +/- 0.003898       
+AFB        |        0.000854 | +/- 0.004473       
+S3         |       -0.149715 | +/- 0.006008       
+S4         |       -0.281073 | +/- 0.005506       
+S5         |        0.006776 | +/- 0.005439       
+S7         |        0.000677 | +/- 0.006144       
+S8         |       -0.008321 | +/- 0.006484       
+S9         |        0.002902 | +/- 0.006153       
+--------------------------------------------------------------------------------
+
+
+============================================================
+Iteración: 43 | Procesando bin9, semilla 518 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30690 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+>>> Ajuste exitoso con errores pequeños. Procesando y guardando resultados...
+
+name                value  (rounded)                minos    at limit
+----------------  ------------------  -------------------  ----------
+rFL_bin9_iter43            -0.281227  - 0.0085   + 0.0085       False
+rS3_bin9_iter43            -0.528527  -  0.024   +  0.024       False
+rS9_bin9_iter43         -0.000190881  -  0.022   +  0.022       False
+rAFB_bin9_iter43           0.0313648  -  0.011   +  0.011       False
+rS4_bin9_iter43             -2.17203  -   0.81   +    0.3       False
+rS7_bin9_iter43           -0.0295376  -  0.066   +  0.047       False
+rS5_bin9_iter43           -0.0019675  -  0.016   +  0.016       False
+rS8_bin9_iter43           -0.0035366  -  0.037   +  0.037       False
+[CheckPoint] Resultados guardados en: fit_results/gen_transformed/bin9/fit_results_gen_physical_bin9.json
+
+--------------------------------------------------------------------------------
+RESUMEN DE OBSERVABLES FÍSICOS (Bin: bin9)
+--------------------------------------------------------------------------------
+Observable | Valor Físico    | Error                    
+--------------------------------------------------------------------------------
+FL         |        0.362980 | +/- 0.003922       
+AFB        |        0.013106 | +/- 0.004476       
+S3         |       -0.154240 | +/- 0.005915       
+S4         |       -0.285406 | +/- 0.005440       
+S5         |       -0.000679 | +/- 0.005402       
+S7         |       -0.003892 | +/- 0.006120       
+S8         |       -0.000611 | +/- 0.006417       
+S9         |       -0.000053 | +/- 0.006169       
+--------------------------------------------------------------------------------
+
+
+============================================================
+Iteración: 44 | Procesando bin9, semilla 266 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30871 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter44 tiene errores altos (Lower: 2.1216, Upper: 0.7304)
+>>> Saltando impresión y guardado para bin9 en iteración 44 debido a errores grandes.
+
+
+============================================================
+Iteración: 45 | Procesando bin9, semilla 499 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31185 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter45 tiene errores altos (Lower: 1.6131, Upper: 1.1469)
+>>> Saltando impresión y guardado para bin9 en iteración 45 debido a errores grandes.
+
+
+============================================================
+Iteración: 46 | Procesando bin9, semilla 715 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30894 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter46 tiene errores altos (Lower: 0.0190, Upper: 9.9850)
+>>> Saltando impresión y guardado para bin9 en iteración 46 debido a errores grandes.
+
+
+============================================================
+Iteración: 47 | Procesando bin9, semilla 858 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31138 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter47 tiene errores altos (Lower: 0.0004, Upper: 8.5244)
+>>> Saltando impresión y guardado para bin9 en iteración 47 debido a errores grandes.
+
+
+============================================================
+Iteración: 48 | Procesando bin9, semilla 629 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30685 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter48 tiene errores altos (Lower: 2.4998, Upper: 0.4672)
+>>> Saltando impresión y guardado para bin9 en iteración 48 debido a errores grandes.
+
+
+============================================================
+Iteración: 49 | Procesando bin9, semilla 361 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31049 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter49 tiene errores altos (Lower: 1.2912, Upper: 1.4464)
+>>> Saltando impresión y guardado para bin9 en iteración 49 debido a errores grandes.
+
+
+============================================================
+Iteración: 50 | Procesando bin9, semilla 394 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31047 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter50 tiene errores altos (Lower: 2.2186, Upper: 0.6578)
+>>> Saltando impresión y guardado para bin9 en iteración 50 debido a errores grandes.
+
+
+============================================================
+Iteración: 51 | Procesando bin9, semilla 487 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30766 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter51 tiene errores altos (Lower: 0.0014, Upper: 2.1377)
+>>> Saltando impresión y guardado para bin9 en iteración 51 debido a errores grandes.
+
+
+============================================================
+Iteración: 52 | Procesando bin9, semilla 912 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31105 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter52 tiene errores altos (Lower: 0.0192, Upper: 2.4886)
+>>> Saltando impresión y guardado para bin9 en iteración 52 debido a errores grandes.
+
+
+============================================================
+Iteración: 53 | Procesando bin9, semilla 188 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31110 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter53 tiene errores altos (Lower: 0.0261, Upper: 2.5636)
+>>> Saltando impresión y guardado para bin9 en iteración 53 debido a errores grandes.
+
+
+============================================================
+Iteración: 54 | Procesando bin9, semilla 800 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31528 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter54 tiene errores altos (Lower: 1.8449, Upper: 0.9344)
+>>> Saltando impresión y guardado para bin9 en iteración 54 debido a errores grandes.
+
+
+============================================================
+Iteración: 55 | Procesando bin9, semilla 734 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31192 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter55 tiene errores altos (Lower: 2.7250, Upper: 0.3535)
+>>> Saltando impresión y guardado para bin9 en iteración 55 debido a errores grandes.
+
+
+============================================================
+Iteración: 56 | Procesando bin9, semilla 221 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31109 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter56 tiene errores altos (Lower: 0.0188, Upper: 1.9749)
+>>> Saltando impresión y guardado para bin9 en iteración 56 debido a errores grandes.
+
+
+============================================================
+Iteración: 57 | Procesando bin9, semilla 219 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31381 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter57 tiene errores altos (Lower: 0.0000, Upper: 2.0323)
+>>> Saltando impresión y guardado para bin9 en iteración 57 debido a errores grandes.
+
+
+============================================================
+Iteración: 58 | Procesando bin9, semilla 323 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31246 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter58 tiene errores altos (Lower: 0.0003, Upper: 2.4060)
+>>> Saltando impresión y guardado para bin9 en iteración 58 debido a errores grandes.
+
+
+============================================================
+Iteración: 59 | Procesando bin9, semilla 444 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30949 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter59 tiene errores altos (Lower: 2.4177, Upper: 0.5191)
+>>> Saltando impresión y guardado para bin9 en iteración 59 debido a errores grandes.
+
+
+============================================================
+Iteración: 60 | Procesando bin9, semilla 539 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30749 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter60 tiene errores altos (Lower: 2.4817, Upper: 0.4927)
+>>> Saltando impresión y guardado para bin9 en iteración 60 debido a errores grandes.
+
+
+============================================================
+Iteración: 61 | Procesando bin9, semilla 589 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30798 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+2026-03-13 23:20:55.394988: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:55.432530: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:55.464725: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:55.498077: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:55.533491: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:55.567275: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:55.599514: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:55.636137: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:55.721129: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:55.755917: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:55.791429: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:55.824053: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:55.861576: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:55.898487: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:55.932006: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:55.965936: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:55.999079: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:56.035466: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:20:56.069358: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe00f00 = {1, 0} Check if pdf output contains any NaNs of Infs
+  -> Descartado: rS4_bin9_iter61 tiene errores altos (Lower: 0.0749, Upper: 2.6015)
+>>> Saltando impresión y guardado para bin9 en iteración 61 debido a errores grandes.
+
+
+============================================================
+Iteración: 62 | Procesando bin9, semilla 888 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30807 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+>>> Ajuste exitoso con errores pequeños. Procesando y guardando resultados...
+
+name                value  (rounded)                minos    at limit
+----------------  ------------------  -------------------  ----------
+rFL_bin9_iter62            -0.280245  - 0.0084   + 0.0085       False
+rS3_bin9_iter62            -0.522458  -  0.024   +  0.024       False
+rS9_bin9_iter62           0.00433455  -  0.022   +  0.022       False
+rAFB_bin9_iter62          0.00123523  -  0.011   +  0.011       False
+rS4_bin9_iter62             -2.10261  -   0.62   +   0.27       False
+rS7_bin9_iter62            0.0212954  -  0.043   +  0.054       False
+rS5_bin9_iter62          -0.00282926  -  0.015   +  0.015       False
+rS8_bin9_iter62            0.0106425  -  0.037   +  0.038       False
+[CheckPoint] Resultados guardados en: fit_results/gen_transformed/bin9/fit_results_gen_physical_bin9.json
+
+--------------------------------------------------------------------------------
+RESUMEN DE OBSERVABLES FÍSICOS (Bin: bin9)
+--------------------------------------------------------------------------------
+Observable | Valor Físico    | Error                    
+--------------------------------------------------------------------------------
+FL         |        0.363434 | +/- 0.003917       
+AFB        |        0.000517 | +/- 0.004471       
+S3         |       -0.152647 | +/- 0.005977       
+S4         |       -0.283934 | +/- 0.005422       
+S5         |       -0.000982 | +/- 0.005374       
+S7         |        0.002998 | +/- 0.006113       
+S8         |        0.001846 | +/- 0.006471       
+S9         |        0.001211 | +/- 0.006096       
+--------------------------------------------------------------------------------
+
+
+============================================================
+Iteración: 63 | Procesando bin9, semilla 826 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31151 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter63 tiene errores altos (Lower: 0.0116, Upper: 2.4259)
+>>> Saltando impresión y guardado para bin9 en iteración 63 debido a errores grandes.
+
+
+============================================================
+Iteración: 64 | Procesando bin9, semilla 63 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30869 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter64 tiene errores altos (Lower: 0.0021, Upper: 2.3081)
+>>> Saltando impresión y guardado para bin9 en iteración 64 debido a errores grandes.
+
+
+============================================================
+Iteración: 65 | Procesando bin9, semilla 393 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31123 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+/home/ghcp/miniconda3/envs/haza_wokr_env/lib/python3.8/site-packages/zfit/minimizers/fitresult.py:1111: RuntimeWarning: Exception occurred, parameter values are not reset and in an arbitrary, last used state. If this happens during normal operation, make sure you reset the values.
+  warnings.warn(
+MINOS failed: Function minimum is not valid: <FMin algorithm='Migrad' edm=1.680534819084291e-07 edm_goal=0.001 errordef=0.5 fval=3975.4181872303952 has_accurate_covar=False has_covariance=True has_made_posdef_covar=False has_parameters_at_limit=False has_posdef_covar=False has_reached_call_limit=True has_valid_parameters=False hesse_failed=True is_above_max_edm=False is_valid=False nfcn=1564 ngrad=0 reduced_chi2=nan time=18.17437484399852>
+  -> Descartado: La rutina de cálculo de errores falló completamente.
+>>> Saltando impresión y guardado para bin9 en iteración 65 debido a errores grandes.
+
+
+============================================================
+Iteración: 66 | Procesando bin9, semilla 541 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31095 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter66 tiene errores altos (Lower: 0.0479, Upper: 2.4499)
+>>> Saltando impresión y guardado para bin9 en iteración 66 debido a errores grandes.
+
+
+============================================================
+Iteración: 67 | Procesando bin9, semilla 633 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31252 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter67 tiene errores altos (Lower: 0.0008, Upper: 2.0218)
+>>> Saltando impresión y guardado para bin9 en iteración 67 debido a errores grandes.
+
+
+============================================================
+Iteración: 68 | Procesando bin9, semilla 580 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30714 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter68 tiene errores altos (Lower: 0.0146, Upper: 2.4347)
+>>> Saltando impresión y guardado para bin9 en iteración 68 debido a errores grandes.
+
+
+============================================================
+Iteración: 69 | Procesando bin9, semilla 891 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30685 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter69 tiene errores altos (Lower: 1.3123, Upper: 1.4363)
+>>> Saltando impresión y guardado para bin9 en iteración 69 debido a errores grandes.
+
+
+============================================================
+Iteración: 70 | Procesando bin9, semilla 598 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31286 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+2026-03-13 23:25:49.858496: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:25:49.894573: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:25:49.921572: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:25:49.955521: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:25:50.038399: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:25:50.079019: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:25:50.109968: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:25:50.141585: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:25:50.171880: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:25:50.207469: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:25:50.237419: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:25:50.268166: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:25:50.304648: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:25:50.339724: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:25:50.366236: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+  -> Descartado: rS4_bin9_iter70 tiene errores altos (Lower: 0.0000, Upper: 2.5293)
+>>> Saltando impresión y guardado para bin9 en iteración 70 debido a errores grandes.
+
+
+============================================================
+Iteración: 71 | Procesando bin9, semilla 37 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31093 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+>>> Ajuste exitoso con errores pequeños. Procesando y guardando resultados...
+
+name                value  (rounded)                minos    at limit
+----------------  ------------------  -------------------  ----------
+rFL_bin9_iter71             -0.30555  - 0.0085   + 0.0085       False
+rS3_bin9_iter71            -0.520577  -  0.024   +  0.023       False
+rS9_bin9_iter71            0.0129954  -  0.022   +  0.022       False
+rAFB_bin9_iter71          0.00343102  -   0.01   +   0.01       False
+rS4_bin9_iter71             -2.15988  -   0.78   +    0.3       False
+rS7_bin9_iter71           -0.0344562  -  0.069   +  0.046       False
+rS5_bin9_iter71            0.0222501  -  0.015   +  0.015       False
+rS8_bin9_iter71            0.0507947  -  0.037   +  0.037       False
+[CheckPoint] Resultados guardados en: fit_results/gen_transformed/bin9/fit_results_gen_physical_bin9.json
+
+--------------------------------------------------------------------------------
+RESUMEN DE OBSERVABLES FÍSICOS (Bin: bin9)
+--------------------------------------------------------------------------------
+Observable | Valor Físico    | Error                    
+--------------------------------------------------------------------------------
+FL         |        0.351808 | +/- 0.003880       
+AFB        |        0.001465 | +/- 0.004480       
+S3         |       -0.154965 | +/- 0.005934       
+S4         |       -0.282669 | +/- 0.005474       
+S5         |        0.007674 | +/- 0.005340       
+S7         |       -0.004552 | +/- 0.006068       
+S8         |        0.008752 | +/- 0.006392       
+S9         |        0.003699 | +/- 0.006172       
+--------------------------------------------------------------------------------
+
+
+============================================================
+Iteración: 72 | Procesando bin9, semilla 381 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31076 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter72 tiene errores altos (Lower: 0.0109, Upper: 2.5871)
+>>> Saltando impresión y guardado para bin9 en iteración 72 debido a errores grandes.
+
+
+============================================================
+Iteración: 73 | Procesando bin9, semilla 261 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31119 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter73 tiene errores altos (Lower: 1.8934, Upper: 8.1669)
+>>> Saltando impresión y guardado para bin9 en iteración 73 debido a errores grandes.
+
+
+============================================================
+Iteración: 74 | Procesando bin9, semilla 270 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30970 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter74 tiene errores altos (Lower: 2.3446, Upper: 0.5791)
+>>> Saltando impresión y guardado para bin9 en iteración 74 debido a errores grandes.
+
+
+============================================================
+Iteración: 75 | Procesando bin9, semilla 967 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31320 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter75 tiene errores altos (Lower: 0.0015, Upper: 2.5079)
+>>> Saltando impresión y guardado para bin9 en iteración 75 debido a errores grandes.
+
+
+============================================================
+Iteración: 76 | Procesando bin9, semilla 454 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31099 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+>>> Ajuste exitoso con errores pequeños. Procesando y guardando resultados...
+
+name                value  (rounded)                minos    at limit
+----------------  ------------------  -------------------  ----------
+rFL_bin9_iter76            -0.292959  - 0.0084   + 0.0084       False
+rS3_bin9_iter76            -0.564886  -  0.025   +  0.025       False
+rS9_bin9_iter76          -0.00214431  -  0.022   +  0.022       False
+rAFB_bin9_iter76          -0.0113921  -  0.011   +  0.011       False
+rS4_bin9_iter76             -2.01191  -   0.43   +   0.23       False
+rS7_bin9_iter76           -0.0598599  -  0.054   +   0.04       False
+rS5_bin9_iter76            -0.021933  -  0.016   +  0.016       False
+rS8_bin9_iter76           -0.0459888  -  0.039   +  0.039       False
+[CheckPoint] Resultados guardados en: fit_results/gen_transformed/bin9/fit_results_gen_physical_bin9.json
+
+--------------------------------------------------------------------------------
+RESUMEN DE OBSERVABLES FÍSICOS (Bin: bin9)
+--------------------------------------------------------------------------------
+Observable | Valor Físico    | Error                    
+--------------------------------------------------------------------------------
+FL         |        0.357572 | +/- 0.003874       
+AFB        |       -0.004716 | +/- 0.004450       
+S3         |       -0.164331 | +/- 0.005940       
+S4         |       -0.284279 | +/- 0.005377       
+S5         |       -0.007345 | +/- 0.005289       
+S7         |       -0.009258 | +/- 0.006124       
+S8         |       -0.007695 | +/- 0.006485       
+S9         |       -0.000592 | +/- 0.006095       
+--------------------------------------------------------------------------------
+
+
+============================================================
+Iteración: 77 | Procesando bin9, semilla 839 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30982 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter77 tiene errores altos (Lower: 0.0000, Upper: 2.2109)
+>>> Saltando impresión y guardado para bin9 en iteración 77 debido a errores grandes.
+
+
+============================================================
+Iteración: 78 | Procesando bin9, semilla 991 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30788 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter78 tiene errores altos (Lower: 2.5472, Upper: 0.4432)
+>>> Saltando impresión y guardado para bin9 en iteración 78 debido a errores grandes.
+
+
+============================================================
+Iteración: 79 | Procesando bin9, semilla 644 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30932 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter79 tiene errores altos (Lower: 2.2130, Upper: 0.3462)
+>>> Saltando impresión y guardado para bin9 en iteración 79 debido a errores grandes.
+
+
+============================================================
+Iteración: 80 | Procesando bin9, semilla 555 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30949 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter80 tiene errores altos (Lower: 0.0000, Upper: 2.2891)
+>>> Saltando impresión y guardado para bin9 en iteración 80 debido a errores grandes.
+
+
+============================================================
+Iteración: 81 | Procesando bin9, semilla 664 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31294 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter81 tiene errores altos (Lower: 0.1488, Upper: 2.3446)
+>>> Saltando impresión y guardado para bin9 en iteración 81 debido a errores grandes.
+
+
+============================================================
+Iteración: 82 | Procesando bin9, semilla 743 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31279 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter82 tiene errores altos (Lower: 0.0006, Upper: 2.2280)
+>>> Saltando impresión y guardado para bin9 en iteración 82 debido a errores grandes.
+
+
+============================================================
+Iteración: 83 | Procesando bin9, semilla 763 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30780 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter83 tiene errores altos (Lower: 0.5456, Upper: 1.5510)
+>>> Saltando impresión y guardado para bin9 en iteración 83 debido a errores grandes.
+
+
+============================================================
+Iteración: 84 | Procesando bin9, semilla 70 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30706 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter84 tiene errores altos (Lower: 2.4659, Upper: 0.4844)
+>>> Saltando impresión y guardado para bin9 en iteración 84 debido a errores grandes.
+
+
+============================================================
+Iteración: 85 | Procesando bin9, semilla 88 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31042 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter85 tiene errores altos (Lower: 0.2328, Upper: 2.3256)
+>>> Saltando impresión y guardado para bin9 en iteración 85 debido a errores grandes.
+
+
+============================================================
+Iteración: 86 | Procesando bin9, semilla 389 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31154 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter86 tiene errores altos (Lower: 2.1380, Upper: 0.7186)
+>>> Saltando impresión y guardado para bin9 en iteración 86 debido a errores grandes.
+
+
+============================================================
+Iteración: 87 | Procesando bin9, semilla 549 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31267 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+>>> Ajuste exitoso con errores pequeños. Procesando y guardando resultados...
+
+name                value  (rounded)                minos    at limit
+----------------  ------------------  -------------------  ----------
+rFL_bin9_iter87            -0.291055  - 0.0084   + 0.0084       False
+rS3_bin9_iter87            -0.493927  -  0.023   +  0.023       False
+rS9_bin9_iter87           0.00641378  -  0.021   +  0.021       False
+rAFB_bin9_iter87          -0.0296309  -   0.01   +   0.01       False
+rS4_bin9_iter87             -2.00339  -   0.45   +   0.24       False
+rS7_bin9_iter87            0.0318828  -   0.04   +  0.047       False
+rS5_bin9_iter87            0.0172224  -  0.015   +  0.015       False
+rS8_bin9_iter87            0.0739044  -  0.037   +  0.037       False
+[CheckPoint] Resultados guardados en: fit_results/gen_transformed/bin9/fit_results_gen_physical_bin9.json
+
+--------------------------------------------------------------------------------
+RESUMEN DE OBSERVABLES FÍSICOS (Bin: bin9)
+--------------------------------------------------------------------------------
+Observable | Valor Físico    | Error                    
+--------------------------------------------------------------------------------
+FL         |        0.358447 | +/- 0.003867       
+AFB        |       -0.012675 | +/- 0.004467       
+S3         |       -0.146700 | +/- 0.005911       
+S4         |       -0.279109 | +/- 0.005550       
+S5         |        0.006083 | +/- 0.005369       
+S7         |        0.004888 | +/- 0.006099       
+S8         |        0.013028 | +/- 0.006454       
+S9         |        0.001830 | +/- 0.006099       
+--------------------------------------------------------------------------------
+
+
+============================================================
+Iteración: 88 | Procesando bin9, semilla 813 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30979 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter88 tiene errores altos (Lower: 0.0000, Upper: 2.1470)
+>>> Saltando impresión y guardado para bin9 en iteración 88 debido a errores grandes.
+
+
+============================================================
+Iteración: 89 | Procesando bin9, semilla 690 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31250 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter89 tiene errores altos (Lower: 1.0859, Upper: 1.6608)
+>>> Saltando impresión y guardado para bin9 en iteración 89 debido a errores grandes.
+
+
+============================================================
+Iteración: 90 | Procesando bin9, semilla 978 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30823 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter90 tiene errores altos (Lower: 0.3807, Upper: 5.9037)
+>>> Saltando impresión y guardado para bin9 en iteración 90 debido a errores grandes.
+
+
+============================================================
+Iteración: 91 | Procesando bin9, semilla 203 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30811 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter91 tiene errores altos (Lower: 0.0161, Upper: 2.5298)
+>>> Saltando impresión y guardado para bin9 en iteración 91 debido a errores grandes.
+
+
+============================================================
+Iteración: 92 | Procesando bin9, semilla 706 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31323 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+2026-03-13 23:37:57.612751: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:37:57.649541: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:37:57.683422: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:37:57.715165: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:37:57.800928: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:37:57.838108: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:37:57.878293: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:37:57.913435: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:37:57.949266: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:37:57.986003: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:37:58.020277: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:37:58.055999: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:37:58.091392: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:37:58.125940: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+2026-03-13 23:37:58.160910: E tensorflow/core/kernels/check_numerics_op.cc:293] abnormal_detected_host @0x73817fe01000 = {1, 0} Check if pdf output contains any NaNs of Infs
+  -> Descartado: rS4_bin9_iter92 tiene errores altos (Lower: 0.0124, Upper: 2.5740)
+>>> Saltando impresión y guardado para bin9 en iteración 92 debido a errores grandes.
+
+
+============================================================
+Iteración: 93 | Procesando bin9, semilla 809 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30993 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter93 tiene errores altos (Lower: 1.9520, Upper: 0.8666)
+>>> Saltando impresión y guardado para bin9 en iteración 93 debido a errores grandes.
+
+
+============================================================
+Iteración: 94 | Procesando bin9, semilla 794 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31049 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter94 tiene errores altos (Lower: 1.6213, Upper: 1.1511)
+>>> Saltando impresión y guardado para bin9 en iteración 94 debido a errores grandes.
+
+
+============================================================
+Iteración: 95 | Procesando bin9, semilla 220 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30838 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter95 tiene errores altos (Lower: 2.7106, Upper: 0.3568)
+>>> Saltando impresión y guardado para bin9 en iteración 95 debido a errores grandes.
+
+
+============================================================
+Iteración: 96 | Procesando bin9, semilla 38 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30895 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter96 tiene errores altos (Lower: 2.3463, Upper: 0.5642)
+>>> Saltando impresión y guardado para bin9 en iteración 96 debido a errores grandes.
+
+
+============================================================
+Iteración: 97 | Procesando bin9, semilla 551 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31032 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter97 tiene errores altos (Lower: 0.0054, Upper: 2.2569)
+>>> Saltando impresión y guardado para bin9 en iteración 97 debido a errores grandes.
+
+
+============================================================
+Iteración: 98 | Procesando bin9, semilla 112 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 30913 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+  -> Descartado: rS4_bin9_iter98 tiene errores altos (Lower: 2.4060, Upper: 0.5299)
+>>> Saltando impresión y guardado para bin9 en iteración 98 debido a errores grandes.
+
+
+============================================================
+Iteración: 99 | Procesando bin9, semilla 338 con rango q2: [15.0, 17.0]
+============================================================
+NUMERO DE EVENTOS: 31117 
+
+
+============================================================
+>>> INICIANDO FIT GEN LEVEL 
+============================================================
+>>> Ajuste exitoso con errores pequeños. Procesando y guardando resultados...
+
+name                value  (rounded)                minos    at limit
+----------------  ------------------  -------------------  ----------
+rFL_bin9_iter99            -0.299722  - 0.0084   + 0.0085       False
+rS3_bin9_iter99            -0.471259  -  0.023   +  0.023       False
+rS9_bin9_iter99           -0.0132874  -  0.021   +  0.021       False
+rAFB_bin9_iter99          0.00832342  -   0.01   +   0.01       False
+rS4_bin9_iter99             -2.12575  -   0.71   +   0.28       False
+rS7_bin9_iter99          0.000256734  -   0.05   +  0.049       False
+rS5_bin9_iter99          -0.00446283  -  0.015   +  0.015       False
+rS8_bin9_iter99           0.00468142  -  0.036   +  0.036       False
+[CheckPoint] Resultados guardados en: fit_results/gen_transformed/bin9/fit_results_gen_physical_bin9.json
+
+--------------------------------------------------------------------------------
+RESUMEN DE OBSERVABLES FÍSICOS (Bin: bin9)
+--------------------------------------------------------------------------------
+Observable | Valor Físico    | Error                    
+--------------------------------------------------------------------------------
+FL         |        0.354471 | +/- 0.003879       
+AFB        |        0.003620 | +/- 0.004480       
+S3         |       -0.141763 | +/- 0.006018       
+S4         |       -0.278875 | +/- 0.005487       
+S5         |       -0.001599 | +/- 0.005393       
+S7         |        0.000035 | +/- 0.006087       
+S8         |        0.000838 | +/- 0.006418       
+S9         |       -0.003853 | +/- 0.006148       
+--------------------------------------------------------------------------------

@@ -155,6 +155,7 @@ class FullAngular_Transformed_PDF(zfit.pdf.BasePDF):
         term11 = S9 * sin2_k * sin2_l * sin2_phi
         
         pdf = term1 + term2 + term3 + term4 + term5 + term6 + term7 + term8 + term9 + term10 + term11
+        pdf = tf.math.maximum(pdf, 1e-10) 
         return pdf
 
     @zfit.supports(norm=True)

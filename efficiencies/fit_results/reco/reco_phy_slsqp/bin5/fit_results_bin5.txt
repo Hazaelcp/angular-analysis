@@ -1,0 +1,9 @@
+Parameter	Value	Error
+FL_bin5_reco	0.531422	0.010880
+S3_bin5_reco	-0.044818	0.013771
+S9_bin5_reco	0.011721	0.013727
+AFB_bin5_reco	-0.006746	0.010748
+S4_bin5_reco	-0.272306	0.015802
+S7_bin5_reco	-0.006665	0.016330
+S5_bin5_reco	0.030184	0.015207
+S8_bin5_reco	-0.010396	0.017095
